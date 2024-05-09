@@ -1,7 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 
 const config: Config = {
   title: "Algodema",
@@ -39,13 +38,10 @@ const config: Config = {
     [
       "classic",
       {
-        docs: {
-          sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
+          routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -58,27 +54,23 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/algodema-social-card.png",
     navbar: {
       title: "Algodema",
       logo: {
         alt: "Algodema Logo",
         src: "img/logo.png",
       },
-      items: [
-        { to: "/blog", label: "Insights", position: "left" },
-        { to: "/contact", label: "Contact", position: "left" },
-      ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
         {
           title: "Algodema",
           items: [
             {
-              label: "Legal Notice",
-              to: "/legal-notice",
+              label: "About us",
+              href: "http://www.algodema.com",
             },
           ],
         },
@@ -100,11 +92,7 @@ const config: Config = {
           items: [
             {
               label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              to: "/",
             },
           ],
         },
@@ -116,8 +104,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-
-
 };
 
 export default config;
