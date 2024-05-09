@@ -1,0 +1,38 @@
+{
+  "link.title.Algodema": {
+    "message": "Algodema",
+    "description": "The title of the footer links column with title=Algodema in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Legal Notice": {
+    "message": "Legal Notice",
+    "description": "The label of footer link with label=Legal Notice linking to /legal-notice"
+  },
+  "link.item.label.Linkedin": {
+    "message": "Linkedin",
+    "description": "The label of footer link with label=Linkedin linking to https://www.linkedin.com/company/algodema"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/algodema"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+  },
+  "copyright": {
+    "message": "Copyright © 2024 Algodema",
+    "description": "The footer copyright"
+  }
+}

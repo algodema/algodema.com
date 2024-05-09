@@ -1,0 +1,15 @@
+{
+  "algodema.name": { "message": "algodema" },
+  "algodema.definition": {
+    "message": "information technology engineering company"
+  },
+  "contact.sendmessage.success": {
+    "message": "Thank you, message sent successfully."
+  },
+  "contact.sendmessage.error": {
+    "message": "Oops, something went wrong... Please try again later."
+  },
+  "contact.sendmessage.error.description": {
+    "message": "or send us an email to: contact@algodema.com"
+  }
+}

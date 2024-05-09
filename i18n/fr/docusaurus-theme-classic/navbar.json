@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Algodema",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Algodema Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Insights": {
+    "message": "Insights",
+    "description": "Navbar item with label Insights"
+  }
+}
