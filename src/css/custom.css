@@ -1,4 +1,3 @@
-
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,6 +5,17 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@font-face {
+  font-family: 'HKG-Regular';
+  src: url('../../static/fonts/Hanken_Grotesk/static/HankenGrotesk-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'HKG-Bold';
+  src: url('../../static/fonts/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf') format('ttf');
+}
+
 :root {
   --ifm-color-primary: #33008b;
   --ifm-color-primary-dark: #2b0076;
@@ -16,6 +26,7 @@
   --ifm-color-primary-lightest: #4200b5;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-text-primary: #050A30;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

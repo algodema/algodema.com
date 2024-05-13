@@ -41,7 +41,7 @@ const config: Config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          routeBasePath: "/",
+          routeBasePath: "/blog",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -61,6 +61,12 @@ const config: Config = {
         alt: "Algodema Logo",
         src: "img/logo.png",
       },
+      items: [
+        { to: "what-we-do", label: "What we do", position: "left" },
+        { to: "about-us", label: "About us", position: "left" },
+        { to: "blog", label: "Insights", position: "left" },
+        { to: "contact", label: "Contact us", position: "left" },
+      ],
     },
     footer: {
       style: "light",
@@ -92,7 +98,7 @@ const config: Config = {
           items: [
             {
               label: "Blog",
-              to: "/",
+              to: "/blog",
             },
           ],
         },
