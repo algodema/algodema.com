@@ -1,11 +1,11 @@
-import { ImageProps } from "next/image"
-import { Language } from "domain/translation/Language"
+import { Language } from "domain/translation/Language";
+import { ImageProps } from "../ImageProps";
 
 export default interface Insight {
-  language: Language
-  title: string
-  content: string
-  image: ImageProps
-  slug: string
-  externalUrl?: string
+  language: Language;
+  title: string;
+  content: string;
+  image: ImageProps;
+  slug: string;
+  externalUrl?: string;
 }

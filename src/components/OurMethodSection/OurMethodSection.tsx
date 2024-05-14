@@ -49,7 +49,7 @@ function OurMethodSection() {
           </p>
           <a
             href="contact"
-            className={clsx(`button button--primary  button--lg`)}
+            className={clsx(`button  button--lg ${styles.getInTouchButton}`)}
           >
             How can we help you?
           </a>
