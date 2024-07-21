@@ -9,7 +9,7 @@ function LegalNotice() {
         <h1>Legal Notice</h1>
         <div>
           <h2>Editor</h2>
-          This website www.algodema.com is edited by the company Algodema SAS
+          This website www.algodema.com is edited by the company algodema SAS
           <ul>
             <li>Address: 22 rue du docteur arnaudet 92190 Meudon, France</li>
             <li>Email: contact@algodema.com</li>
@@ -44,7 +44,7 @@ function LegalNotice() {
               </p>
             </li>
             <li>
-              <p>The use of the contact form, to allow Algodema to respond.</p>
+              <p>The use of the contact form, to allow algodema to respond.</p>
             </li>
             <li>
               <p>Subscribing to our newsletter and its follow-up.</p>
@@ -63,8 +63,8 @@ function LegalNotice() {
             copyright and intellectual property laws. Reproduction of all or
             part of the website is strictly prohibited, including visual
             illustrations, texts, and photographic representations. However,
-            feel free to be inspired by Algodema content, Insights and
-            illustrations! The trademarks and logos of Algodema, as well as the
+            feel free to be inspired by algodema content, Insights and
+            illustrations! The trademarks and logos of algodema, as well as the
             distinctive signs and names of third-party companies appearing on
             the website, are protected by their respective owners and cannot be
             used for any purpose without their prior authorization.

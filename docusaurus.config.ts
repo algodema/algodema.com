@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Algodema",
+  title: "algodema",
   tagline: "Information Technology Company",
   favicon: "img/favicon.ico",
 
@@ -56,9 +56,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/algodema-social-card.png",
     navbar: {
-      title: "Algodema",
+      title: "algodema",
       logo: {
-        alt: "Algodema Logo",
+        alt: "algodema Logo",
         src: "img/logo.png",
       },
       items: [
@@ -72,11 +72,15 @@ const config: Config = {
       style: "light",
       links: [
         {
-          title: "Algodema",
+          title: "algodema",
           items: [
             {
               label: "About us",
               href: "http://www.algodema.com",
+            },
+            {
+              label: "Legal notice",
+              href: "/legal-notice",
             },
           ],
         },
@@ -103,7 +107,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Algodema`,
+      copyright: `Copyright © ${new Date().getFullYear()} algodema`,
     },
     prism: {
       theme: prismThemes.github,

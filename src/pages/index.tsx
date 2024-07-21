@@ -1,45 +1,25 @@
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import HomeSlides from "@site/src/components/HomeSlides/HomeSlides";
+import OurMethodSection from "@site/src/components/OurMethodSection/OurMethodSection";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Heading from "@theme/Heading";
-
 import styles from "./index.module.css";
+import FeaturesClients from "@site/src/components/FeaturedClients/FeaturedClients";
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+function HomePage() {
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <Layout>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <section>
+          <HomeSlides />
+        </section>
+        <section>
+          <OurMethodSection />
+        </section>
+        <section>
+          <FeaturesClients />
+        </section>
       </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Information Technology Company"
-    >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
+
+export default HomePage;
