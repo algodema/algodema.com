@@ -1,9 +1,8 @@
-import { CartaItem } from "@site/src/domain/ui/carta/CartaItem";
-import CartaList from "@site/src/components/ui/Carta/CartaList";
-import { services } from "../../data/services";
-import React from "react";
-import Layout from "@theme/Layout";
 import ContentLayout from "@site/src/components/ContentLayout";
+import ServicesSection from "@site/src/components/ServicesSection/ServicesSecion";
+import { CartaItem } from "@site/src/domain/ui/carta/CartaItem";
+import Layout from "@theme/Layout";
+import { services } from "../../data/services";
 import styles from "./index.module.css";
 
 function index() {
@@ -38,10 +37,7 @@ function index() {
                 How can we help you?
               </a>
             </div>
-            <div className={styles.servicesContainer}>
-              <h1 className={styles.servicesTitle}>Our services</h1>
-              <CartaList items={cartaItems} />
-            </div>
+            <ServicesSection services={services} />
           </div>
         </div>
       </ContentLayout>

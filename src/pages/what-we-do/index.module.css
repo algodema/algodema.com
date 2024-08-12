@@ -41,15 +41,3 @@ pageParagraph {
     color: #ffffff;
     background-color: #B91C1C;
 }
-
-.servicesContainer {
-    margin-top: 2rem;
-}
-
-.servicesTitle {
-    margin-bottom: 1rem; 
-font-size: 1.5rem;
-line-height: 2rem; 
-font-weight: 700; 
-
-}
