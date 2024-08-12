@@ -1,0 +1,12 @@
+.arrow {
+    border: 2px solid var(--ifm-color-primary);
+    border-bottom: none;
+    border-left: none;
+    display: inline-block;
+    height: 9px;
+    margin-bottom: 1px;
+    margin-left: .5rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 9px;
+}

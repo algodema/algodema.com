@@ -4,6 +4,7 @@ import { services } from "../../data/services";
 import React from "react";
 import Layout from "@theme/Layout";
 import ContentLayout from "@site/src/components/ContentLayout";
+import styles from "./index.module.css";
 
 function index() {
   const cartaItems: CartaItem[] = services.map((service, index) => ({
@@ -18,19 +19,13 @@ function index() {
   return (
     <Layout title="home">
       <ContentLayout>
-        <div className="grid grid-flow-row gap-2 md:grid md:grid-flow-col md:gap-4">
-          <img
-            src="/img/hands-on-keyboard.jpg"
-            alt="technology"
-            width={380}
-            height={480}
-          />
+        <div className={styles.rootContainer}>
           <div>
             <div>
-              <h1 className="mb-4 text-2xl font-bold text-primary-700">
+              <h1 className={styles.pageTitle}>
                 Empowering you to stay ahead of the curve.
               </h1>
-              <p className="mb-4">
+              <p className={styles.pageParagraph}>
                 Embracing the forefront of technological evolution, our
                 distinguishable engineering firm excels in the realms of cloud
                 computing, software architecture, application development, and
@@ -39,17 +34,12 @@ function index() {
                 boundaries, shaping a future where possibilities are limitless
                 and excellence is the norm.
               </p>
-              <a
-                href="contact"
-                className="hover:bg-red-920 dark:focus:ring-red-920 mt-2 inline-flex  items-center rounded-lg bg-red-700 px-3 py-2 text-center text-lg font-medium text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700"
-              >
+              <a href="contact" className={styles.buttonLinkContact}>
                 How can we help you?
               </a>
             </div>
-            <div className="mt-8">
-              <h1 className="mb-4 text-2xl font-bold text-primary-700">
-                Our services
-              </h1>
+            <div className={styles.servicesContainer}>
+              <h1 className={styles.servicesTitle}>Our services</h1>
               <CartaList items={cartaItems} />
             </div>
           </div>

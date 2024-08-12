@@ -2,6 +2,7 @@ import React from "react";
 import Carta from "./Carta";
 import { CartaItem } from "@site/src/domain/ui/carta/CartaItem";
 import { ImageProps } from "@site/src/domain/ImageProps";
+import styles from "./CartaList.module.css";
 
 interface CartaListProps {
   items: CartaItem[];
@@ -9,7 +10,7 @@ interface CartaListProps {
 }
 function CartaList({ items, annex }: CartaListProps) {
   return (
-    <div className="flex flex-col  flex-wrap gap-1 md:flex-row">
+    <div className={styles.cartaListContainer}>
       {items.map((cartaItem: CartaItem) => (
         <Carta cartaItem={cartaItem} key={cartaItem.index} />
       ))}

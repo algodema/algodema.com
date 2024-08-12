@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import ContentLayout from "@site/src/components/ContentLayout";
-import styles from "./contact.module.css";
+import styles from "./index.module.css";
 
 function Contact() {
   const {
