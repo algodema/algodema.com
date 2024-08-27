@@ -114,6 +114,12 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  customFields: {
+    emailJsTemplateId: "template_g011l8c",
+    emailJsServiceId: "service_5gkozod",
+    emailJsUserId: "h8i8I6MeNsardrZHm",
+  },
 };
 
 export default config;
