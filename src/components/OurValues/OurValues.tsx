@@ -1,5 +1,5 @@
 import styles from "./OurValues.module.css";
-
+import useBaseUrl from "@docusaurus/useBaseUrl";
 function ValueParagraph({
   title,
   content,
@@ -20,7 +20,7 @@ function OurValues() {
     <div className={styles.rootContainer}>
       <div>
         <img
-          src="/img/about/values.jpg"
+          src={useBaseUrl("/img/about/values.jpg")}
           alt="values"
           width={800}
           height={800}

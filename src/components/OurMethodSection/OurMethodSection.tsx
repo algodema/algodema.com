@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./OurMethodSection.module.css";
 
 function OurMethodSection() {
@@ -8,7 +9,7 @@ function OurMethodSection() {
       <div className="col col--6">
         <div className="col-demo">
           <img
-            src="/img/home/business-people-are-brainstorming.jpg"
+            src={useBaseUrl("/img/home/business-people-are-brainstorming.jpg")}
             alt="4keys"
             width={538}
             height={428}
