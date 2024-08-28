@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalgodema=self.webpackChunkalgodema||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/algodema.com/blog","blogTitle":"Blog","authorsListPath":"/algodema.com/blog/authors"}')}}]);

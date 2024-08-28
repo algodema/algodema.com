@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalgodema=self.webpackChunkalgodema||[]).push([[133],{7634:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/algodema.com/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
