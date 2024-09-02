@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalgodema=self.webpackChunkalgodema||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Software testing from separate activity to core development","permalink":"/blog/software-testing-from-separate-activity-to-core-development\\"","unlisted":false,"date":"2021-03-06T00:00:00.000Z"}]}')}}]);
