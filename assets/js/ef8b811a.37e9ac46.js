@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalgodema=self.webpackChunkalgodema||[]).push([[8947],{6600:e=>{e.exports=JSON.parse('{"authors":[{"name":"Reda Jaifar","title":"Lead Developer","url":"https://github.com/reda-jaifar","imageURL":"https://avatars.githubusercontent.com/u/10919693?s=400&u=b30e8e86baebe277b11a4117560d601fd34bd245&v=4","key":"reda","page":null,"count":8}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalgodema=self.webpackChunkalgodema||[]).push([[5749],{5922:a=>{a.exports=JSON.parse('{"tag":{"label":"team","permalink":"/blog/tags/team","allTagsPath":"/blog/tags","count":3,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/team","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

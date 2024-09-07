@@ -686,6 +686,63 @@ it this way</p>
         <category label="testing" term="testing"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Few and permanent rather than many and intermittent]]></title>
+        <id>https://algodema.com/blog/few-and-permanent-many-and-intermittent</id>
+        <link href="https://algodema.com/blog/few-and-permanent-many-and-intermittent"/>
+        <updated>2020-11-29T23:30:30.000Z</updated>
+        <summary type="html"><![CDATA[author]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/few-and-permanent-many-and-intermittent-7955f73762e5cc71e26cb25923290603.jpg" width="4100" height="3187" class="img_ev3q">
+<a href="https://garden.lovetoknow.com/image/224771~handwithseedlings.jpg" target="_blank" rel="noopener noreferrer">Photo by Rachen Buosa</a></p>
+<p>This post's title is an old quote I've heard since my early edge, but I never gave it much attention or tried to go beyond this phase, just some words shared by older people in my family. Unfortunately, it took me years before I mind the importance of continuously complete small tasks and cut off with the idea of doing the whole job at once.
+Thanks to agility I'm changing my mind and acquiring new ways of working and producing.
+Before sharing with you why and how splitting any job or mission into small  tasks helped me to achieve goals, I would like to share the pain encountered while trying to provide many efforts at once.</p>
+<p>I remember the school-age when I was trying to prepare for my exams, I  always adopt the same strategy by spending a whole day revising my courses, doing exercises, and once I got tired I close my books mark the material as completed. I often succeeded in my exams but many times I recognize that I could do better, but who cares, I wasn't obsessed about getting the highest score.</p>
+<p>While I'm writing these lines, I remember the time when I want to get abs and being fit, I can't tell you that my motivation was something other than having the summer body. As a consequence, I start going to the gym and training in late April, But for 3 years consecutively, and contrary to my exam story, I've never reached my goal even though exercising 6 times per week for not less than two months.
+From these two stories shared above, I retain one lesson providing much effort in a short period may, or not work.</p>
+<p>But what if I could change something to increase my chances to get a shaped body, maybe be coached by a professional! Yes, I did, maybe follow a restricted diet! Yes, I did, the only thing that I could do and not did it is starting my program earlier and going slowly but surely.</p>
+<h1>Few and permanent</h1>
+<p>A few years ago I've had the opportunity to discover agility at my university, then I worked on an agile project, 1 month after starting the project our web application was in production, users interacting with and we are having feedback, this is really amazing and so satisfying. I do believe that the key rules for such success were</p>
+<ul>
+<li>defining small but valuable feature</li>
+<li>continuously delivering</li>
+</ul>
+<p>Breaking a big task down into small, more feasible ones helped me avoid procrastination and an overwhelmed workload. Here are some steps to follow for breaking a task down, but remember that you're the only one capable of doing that depending on the context, the knowledge, and priorities:</p>
+<p>1 - Make sure you visualize the big picture, that means what the end product
+or make sure you visualize
+2 - Think about the order, which one should be completed first, second,
+and so on...
+3 - Define milestones:  make a short plan which will help you stay
+on track.
+4 - Complete your tasks early to have additional time for a final review</p>
+<p>I do believe that permanent iteration pays in the end, with the adoption of a few concepts we gain confidence and progression:</p>
+<ul>
+<li>Going slowly, how many times have we heard that? but Have we ever enjoyed it as much as we can. Going slowly means to me doing things at my pace while giving all my attention and concentration to do it the right way and achieve high quality. Consider coding a small program or write a report, try to do it rapidly and at once, then do it slowly over 3 times within 1 day, then compare your results, I have no doubt that quality will differ.</li>
+<li>But Surely, yes make sure at any stage, you are performing with your best efforts, concentration, and passion.</li>
+<li>While doing things over many periods, make sure at the end of each milestone you create something tangible, deliverable, and useful.</li>
+<li>With dedicated attention to detail, because details make the difference.</li>
+</ul>
+<p>How the rule of "few and permanent" affected my motivation and productivity:</p>
+<ul>
+<li>When I started scheduling my job and tasks as few ones completed over many steps, I begin to feel more confident, and sure about my achievement. In my unconscious mind, I'm convinced that I'll reach the expected goal whatever how many iterations I'll go through.</li>
+<li>My motivation and passion are often at the top, as completing tasks that are tangible, apparent, and useful. As a software engineer, I do love to deliver small features as soon as they can be deployed to production and being used by end-users, But this is certainly true in other fields of application.</li>
+<li>As my tasks are small, they are completed early so I can get feedback on their useless then I'll iterate to improve and optimize, rather than reviewing a whole job with many comments and issues to handle.</li>
+</ul>
+<p>We always need to remind that</p>
+<blockquote>
+<p>Overwatering can kill flowers, a moderate and continuous one give them chances to grow up</p>
+</blockquote>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="approach" term="approach"/>
+        <category label="processes" term="processes"/>
+        <category label="methods" term="methods"/>
+        <category label="thinking" term="thinking"/>
+        <category label="software" term="software"/>
+        <category label="developer" term="developer"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Mentoring a new junior teammate from day 1 to]]></title>
         <id>https://algodema.com/blog/mentoring-a-new-junior-teammate-from-day1-to</id>
         <link href="https://algodema.com/blog/mentoring-a-new-junior-teammate-from-day1-to"/>
@@ -787,5 +844,341 @@ my field of expertise.</p>
         <category label="team" term="team"/>
         <category label="collaboration" term="collaboration"/>
         <category label="share" term="share"/>
+        <category label="mentor" term="mentor"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[is our scoping was successful?]]></title>
+        <id>https://algodema.com/blog/is-our-scoping-was-successful</id>
+        <link href="https://algodema.com/blog/is-our-scoping-was-successful"/>
+        <updated>2020-06-22T07:56:31.000Z</updated>
+        <summary type="html"><![CDATA[author]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/is-our-scoping-was-successful-9f759d8cee2b80b2a93014937f453985.jpg" width="1024" height="768" class="img_ev3q"></p>
+<p>A new project is in the pipeline and we are ready to kick off this new challenge, Our team is ready and full of energy
+and enthusiasm. Scoping sessions are scheduled this week.
+The first session started with a short description of the project, making the focus on the business and strategic
+impact and how will help the company to accelerate its digital transformation in the perspective of developing
+new digital products and cloud-based offerings. It’s time to finish the workshop with one conclusion all team members
+share the same frustration regarding where we want to go.
+During the week these sessions succeeded one after the other and still having a blur vision, confusing features, and also
+an organization that we believe is not convenient to drive the boat to the shore.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exploring-the-real-value">Exploring the real value<a href="https://algodema.com/blog/is-our-scoping-was-successful#exploring-the-real-value" class="hash-link" aria-label="Direct link to Exploring the real value" title="Direct link to Exploring the real value">​</a></h2>
+<p>As a product owner, I have to gather the maximum information about the customer business, their strategic goals, and
+where they want to land once the project takes off. I remember this quote from Dassault Systemes <a href="http://3ds.com/" target="_blank" rel="noopener noreferrer">Dassault Systemes !</a></p>
+<blockquote>
+</blockquote>
+<p>If we ask the right questions, we can change the world</p>
+<p>Asking pertinent questions is crucial to understand the business and the desired value we expect to provide. For a
+successful scoping workshop, this job should be prepared before and these reflections and analysis at least started
+in order to keep the team members away from any frustration or defeatism.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-the-role-of-the-product-owner-is-very-important-at-this-stage">Why The role of the Product Owner is very important at this stage?<a href="https://algodema.com/blog/is-our-scoping-was-successful#why-the-role-of-the-product-owner-is-very-important-at-this-stage" class="hash-link" aria-label="Direct link to Why The role of the Product Owner is very important at this stage?" title="Direct link to Why The role of the Product Owner is very important at this stage?">​</a></h2>
+<p>The product owner is the guard of the vision and customer value, keeping the train on track requires a lot of effort
+regarding the business understanding and mapping this knowledge to user stories that designers, developers are easily
+able to take in charge and implement.</p>
+<p>Based on our experience, our product owner iterated regularly over the backlog to refine the items and get rid of
+the irrelevant ones, each time he was approached to revise a business rule.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="specifications-and-requirements">Specifications and requirements<a href="https://algodema.com/blog/is-our-scoping-was-successful#specifications-and-requirements" class="hash-link" aria-label="Direct link to Specifications and requirements" title="Direct link to Specifications and requirements">​</a></h2>
+<p>What kind of format our documents should follow to write down the specifications and requirements and how many details
+we should draft? this question is indispensable to answer before starting, the more we give attention to what to write
+the more implementation will be easily taking into consideration all constraints and customer-specific requirements
+such as solution’s time responding, availability, number of future users. These notes help considerably when it comes
+to architecture design and technical stack decisions.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="deliverable-frequency-and-type">Deliverable frequency and type<a href="https://algodema.com/blog/is-our-scoping-was-successful#deliverable-frequency-and-type" class="hash-link" aria-label="Direct link to Deliverable frequency and type" title="Direct link to Deliverable frequency and type">​</a></h2>
+<p>While in agile project continuous delivery is at the heart of it and shouldn’t be part of discussions but the frequency
+of delivery and type of deliverable could be, The reason why a team should agree and state early these points.</p>
+<p>The adoption of continuous improvement is totally appreciated while the business is evolving but we have to pay attention
+before investing in this area causes often lead to delivery postponed even contract issues.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cost">Cost<a href="https://algodema.com/blog/is-our-scoping-was-successful#cost" class="hash-link" aria-label="Direct link to Cost" title="Direct link to Cost">​</a></h2>
+<p>Sometimes and due to technical choices such as licences, do not forget to include them in your budget estimation and
+let stakeholders know about them, When it comes to money transparency is the key to spread trust and avoid
+undesirable surprises. the rules are:</p>
+<ul>
+<li>calculate an accurate budget and make sure all elements are included.</li>
+<li>define a process that helps to keep the budget flexible regarding features without over budgeting.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="communication">Communication<a href="https://algodema.com/blog/is-our-scoping-was-successful#communication" class="hash-link" aria-label="Direct link to Communication" title="Direct link to Communication">​</a></h2>
+<p>Whatever the project scope or size, communication is a key to a successful customer value and team satisfaction, Defining
+communication channels, rules, and tools between stakeholders and project team can considerably impact project
+progression and target achieving. Communication also implies some values such as transparency about the team’s
+capabilities what we can and we cannot do, these kinds of statements should be communicated as soon as possibl
+to help the customer make the best decision.</p>
+<p>In my point of view, I prefer to avoid the usage of multiple communication tools and formats with our
+stakeholders (telephone, email, video-conference, meetings…), this can help keep our exchanges simple, effective.</p>
+<p>Regarding internal communication between team members, Personally, I have a lot of appreciation for meetings
+or face-to-face discussion believing that is the quick and right way to argue a decision or explain a point of view
+to convince my team-mates of any technical choice. Otherwise using a project management tool to track and monitor
+is still very useful in order to keep everyone updated and everything documented.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="flexibility-and-adaptation">Flexibility and adaptation<a href="https://algodema.com/blog/is-our-scoping-was-successful#flexibility-and-adaptation" class="hash-link" aria-label="Direct link to Flexibility and adaptation" title="Direct link to Flexibility and adaptation">​</a></h3>
+<p>Agile practices come to solves today’s project issues and pains, but at any stage, we should be wedged, In my opinion, we have
+to cope with challenges, involve the team in every decision, think differently and act like one. Scoping is the stage
+where we invite all involved people to the same boat with one goal is to reach the destination.</p>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="software" term="software"/>
+        <category label="agile" term="agile"/>
+        <category label="engineering" term="engineering"/>
+        <category label="workflows" term="workflows"/>
+        <category label="practices" term="practices"/>
+        <category label="methods" term="methods"/>
+        <category label="processes" term="processes"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From small team to large one]]></title>
+        <id>https://algodema.com/blog/from-small-team-to-large-one</id>
+        <link href="https://algodema.com/blog/from-small-team-to-large-one"/>
+        <updated>2020-05-22T12:56:31.000Z</updated>
+        <summary type="html"><![CDATA[author]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/from-small-team-to-large-one-d5313349378962c9d6f3c995ea09095b.jpeg" width="940" height="615" class="img_ev3q"></p>
+<p>During the latest months, I’ve been asked to move from a small agile team to a large one, why? what changes should I
+cope with? what obstacles to tackle and what kind of achievements we accomplished? here are the experience story and
+the learned lessons</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="small-agile-team">Small Agile team<a href="https://algodema.com/blog/from-small-team-to-large-one#small-agile-team" class="hash-link" aria-label="Direct link to Small Agile team" title="Direct link to Small Agile team">​</a></h2>
+<p>I've been part of a small agile team of 4 developers, tech-lead, UX designer, Scrum master and a Product owner. Working
+with scrum method, I do believe that this team size was just perfect as the communication is too smoothly and
+decision making is quick and effective. We developers were using the git flow branching strategy. A new branch is
+created for each user story, commit added, pull request created and reviewed then merged into the master. Product
+owner manage easily his backlog. The scrum master scheduled perfectly our scrum sessions and these one were
+gainful in term of business understanding and story telling. Thanks to the great work of our UX/UI design
+integrating the UI and implementing the user experience is definitely optimal thanks to sketch software.</p>
+<blockquote>
+<p>The team size was a key element to a successful journey, providing a great added value at the end of each sprint
+while delivering high-quality  software with  security standards-compliant.</p>
+</blockquote>
+<h1>Communication and collaboration</h1>
+<p>When is come to working together and collaborating with a team, communication is a key factor toward success. While
+this is easy for a small team as we are often setting around the same table or in the same open space we communicate
+orally and  directly trying always to avoid emails and chat as much as we can, but for sure without omitting to
+give each  one its  private space and time to concentrate on his tasks with no disturbs. In the other hand and
+once the team getting larger we first obstacles we start to face is how to communicate and exchange, even harder
+for taking a decision. Another point is managing  meetings which means to manege finding rooms especially as we
+are working in a co-working building then as we have to take into consideration each one is calendar. Now we
+are in the meeting room with more than 12 team-mates it took longer than expected, deviation and rarely we end
+up with a defined actions list assigned people.</p>
+<blockquote>
+<p>I believe either we are a small or a large team there are the right tools and ways to communicate, We need just to
+avoid  applying the ones that work fine for a small team in the context of a  large team and vice versa.</p>
+</blockquote>
+<h1>Support and expertise</h1>
+<p>One of the greatest points when you are part of a small team, is that you know each member is scope of expertise
+which is very  useful and effective when it comes to coordinate whether to change a piece of code, to integrate a new
+technology or document a feature. Unfortunately this advantage disappears along the way a team begins to extend and
+we start to be distributed which affects our knowledge about expertise mapping in the project and for sure consume
+more time to find the right source to support you.</p>
+<p>I refer to Conway's law stating about organization structure footprint on their production:</p>
+<blockquote>
+</blockquote>
+<p>Organizations which design systems ... are constrained to produce designs which are copies of the comminication
+structures of these organizations. "Melvin Conway"</p>
+<p>In our organization we understood this quickly and thanks to our agile coach we reorganize our teams and introduced
+some practices to continue delivering added value feature continuously.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="single-point-of-knowledge">Single Point of Knowledge<a href="https://algodema.com/blog/from-small-team-to-large-one#single-point-of-knowledge" class="hash-link" aria-label="Direct link to Single Point of Knowledge" title="Direct link to Single Point of Knowledge">​</a></h2>
+<p>As our team begin to grow and having many members than needed in an agile model, I observed in the lake of
+coordination, close collaboration, and effective communication, new single points of knowledge taking  place in
+our organization as some people with or without attention monopolize and hold in their corner some specific
+knowledge or expertise which impacts the pace of productivity, innovation, and rotation.
+Contrarily to the case of a small team where the knowledge and responsibilities are well shared and all members
+have almost the same level of knowledge about the project which avoids the 'indispensable member' obstacle and
+lead to transparent and rapid rotation and delivery.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="team-representative-and-interface">Team representative and interface<a href="https://algodema.com/blog/from-small-team-to-large-one#team-representative-and-interface" class="hash-link" aria-label="Direct link to Team representative and interface" title="Direct link to Team representative and interface">​</a></h2>
+<p>When I was part of a small team there was a member who keeps the team informed, knows the organization’s culture,
+and promotes best practices that make our entity inspiring. Often this role appears naturally cause the person playing
+it holds some qualities that help him representing the team, interfacing with management contrarily in the context of
+the old school team, a project manager take this responsibility. But can we have many representatives (Leaders) in
+the team? In my point of view, YES as each member has a different style therefore we can boost the team’s
+productivity and creativity. Shared leadership led also to reduce responsibilities stress, thrive solidarity.
+For the company we observed many advantages once we made the move to this model:</p>
+<ul>
+<li>Share the the bigger picture with everyone.</li>
+<li>give the company more options.</li>
+<li>increase in decision making transparency.</li>
+</ul>
+<p>Finally, the question is can this model succeed with a large team? From my experience, this can be a huge challenge
+for the management but also for immature teams who can considerably slow down the decision making.</p>
+<p>I’ve been part of different teams small and large and I believe that adopting the right management style and
+establishing a transparent and honest relationship whether between team members or between teams and the management
+should always gain the upper hand.</p>
+<p>Being the representative of your team is talking about your shared values and practices, defending your team's decisions
+and choices. But in any case shouldn't be a position that we take over.</p>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="software" term="software"/>
+        <category label="team" term="team"/>
+        <category label="communication" term="communication"/>
+        <category label="agile" term="agile"/>
+        <category label="organization" term="organization"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A 2 months remote work experience]]></title>
+        <id>https://algodema.com/blog/a-two-months-remote-work-experience</id>
+        <link href="https://algodema.com/blog/a-two-months-remote-work-experience"/>
+        <updated>2020-04-24T12:56:31.000Z</updated>
+        <summary type="html"><![CDATA[author]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/2-months-remote-work-experience-138416f11c7e4a8713f52e22169bc3cb.jpg" width="2911" height="2305" class="img_ev3q"></p>
+<p>March 2020 marked by many measures taken by the majority of countries in the five continents following covid-19.
+My company who already allowed their employees to work from home occasionally, Now they are obliged to continue
+working remotely for an undetermined time.</p>
+<p>Despite many advantages remote work bring, there are some inconveniences to manage for good productivity and effective
+work.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setup-my-home-desk">Setup my home desk<a href="https://algodema.com/blog/a-two-months-remote-work-experience#setup-my-home-desk" class="hash-link" aria-label="Direct link to Setup my home desk" title="Direct link to Setup my home desk">​</a></h2>
+<p>As I'm working from home, I've never though about setting up any similar environment like the one at the office, I've
+just being lying on the couch the whole workday or sometime I change my position a trifle.
+Two weeks later I observed that my concentration and productivity is going down more and more, I tough having some
+tiredness, After exchanging with a colleague, He reveal its secret for keeping energy and effectiveness, I was
+surprised while hearing that setting up a similar work desk at home may highly help. I decided to take into
+consideration this point, Now I confirm how this changed my home working routine.</p>
+<blockquote>
+<p>I'am 100% convinced that setting up a convenient desk at home can considerably help
+with commitment, concentration and effectiveness while working from home <!-- -->☺️</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="we-dont-all-have-an-isolated-room">We don't all have an isolated room!<a href="https://algodema.com/blog/a-two-months-remote-work-experience#we-dont-all-have-an-isolated-room" class="hash-link" aria-label="Direct link to We don't all have an isolated room!" title="Direct link to We don't all have an isolated room!">​</a></h2>
+<p>Unfortunately living in Paris or any big city around the world has its disadvantage when it comes to spacious
+lodgement.
+For the parents with their children at home, for the friends sharing the same room, dealing with this limitation is a
+key point for relaxed home working without impacting our collaboration and performance. From my point of view, we can
+manage this issue by rotating our work hours and companies should tolerate this option letting parents working while
+their children are sleeping.
+Overall having a private room stay the best option for enhancing what has been mentioned about setting a home desk.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="effective-communication">Effective communication<a href="https://algodema.com/blog/a-two-months-remote-work-experience#effective-communication" class="hash-link" aria-label="Direct link to Effective communication" title="Direct link to Effective communication">​</a></h2>
+<p>In the field of software engineering, Often discussing new technologies, good practice or some technical decision
+brainstorming may be held while we are sharing a coffee with team-mates in the cafeteria, or around a table in a
+meeting room, that means we have a face to face communication, In my case, I do love this way as it brings to me a
+smooth and flexible tools using my body language to explain and talk about a topic.
+Unfortunately while working from home this manner is no longer afford the same way we do at the office. But thanks to
+recent video-conference platforms we can continue relying on our communication habits taking into consideration some
+rules for en effective exchanging, follow the ones I’m using:</p>
+<ul>
+<li>Turning my camera on during the meetings.</li>
+<li>Wearing my usual clothes like in the office.</li>
+<li>Using a virtual whiteboard instead of the real one to explain, share and design my ideas.</li>
+<li>Turning my micro off when I'm not the speaker.</li>
+<li>Summarizing your notes and sharing them with colleagues.</li>
+<li>Video calls or chat over emails</li>
+<li>Most important is to setup the rules with your team and colleagues to avoid disturbing each other.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="do-not-forget-ourselves">Do not forget ourselves!<a href="https://algodema.com/blog/a-two-months-remote-work-experience#do-not-forget-ourselves" class="hash-link" aria-label="Direct link to Do not forget ourselves!" title="Direct link to Do not forget ourselves!">​</a></h2>
+<p>I noticed during the first weeks of my home working that I did not take rest and breaks regularly. So I used to
+schedule meeting right away, sometimes at lunch time, sometimes I chain them without any pause. Few time later I
+recognize a lack of concentration and it becomes very disturbing to see calls and meetings notification showing up.
+The conclusion is working remotely does not mean working continuously and do it so may substantially impact our
+physical and mental health, the reason why I decided to schedule my rest and breaks during the work day and stay
+away from work during these time slots.</p>
+<blockquote>
+</blockquote>
+<p>While working from home, never forget to take rest and breaks during a workday as it protects us
+from health risks and mental disturbance.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="so-far-so-good">So far so good<a href="https://algodema.com/blog/a-two-months-remote-work-experience#so-far-so-good" class="hash-link" aria-label="Direct link to So far so good" title="Direct link to So far so good">​</a></h3>
+<p>Being armed with the right tools and techniques helped me keeping a good mood with my team-mates, enhancing my
+productivity and enjoying my workday from home.</p>
+<blockquote>
+</blockquote>
+<p>Wherever we are, let's do our job with love and passion.</p>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="software" term="software"/>
+        <category label="remote" term="remote"/>
+        <category label="communication" term="communication"/>
+        <category label="workplace" term="workplace"/>
+        <category label="collaboration" term="collaboration"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A 4 weeks mob programming]]></title>
+        <id>https://algodema.com/blog/a-four-weeks-mob-programming</id>
+        <link href="https://algodema.com/blog/a-four-weeks-mob-programming"/>
+        <updated>2020-04-02T12:56:31.000Z</updated>
+        <summary type="html"><![CDATA[author]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/a-4-weeks-mob-programming-1dd406c858c4318641f7a8dc74afc929.jpg" width="1024" height="640" class="img_ev3q"></p>
+<p>It's sound strange at first, difficult to manage, and certainly understanding the
+reasons behind and how can we take advantage of this practice introduced a couple of years ago.</p>
+<p>Mob programming is an approach introduced to the agile world in the purpose of helping the teams
+establish a common development mindset, sharing the same principles to design and code.</p>
+<p>A few months ago my team and I started a new project aiming at providing a digital platform
+for developers to help them accelerate their time to market. The platform  offers a multiple<br>
+<!-- -->services such as creating web application scaffold, source code repositories, build pipeline
+with all high-quality stages like security check, team management and deployment environment.</p>
+<p>Obviously the project size is enormous and requires a high quality architecture design,
+distributed systems best practices and synchronous coding styles so during the scoping and framing
+phases we decided to adopt the mob programming approach to share and communicate architecture decisions,
+lean our performances with the goal to promote our autonomy when it comes to developing user stories
+independently or separately.</p>
+<p>our mob programming sessions are scheduled for the whole workday for 4 weeks consecutive,
+we team up in the same room having only one keyboard and one big screen. Each developer takes control
+of the keyboard and code for 10 minutes. I believe that respecting the mob programming rules
+is a key to success in this experience which is full of learning for developers but also for the
+quality of the product as we build together the skeleton.</p>
+<p>I would like to share with you all the rules we followed during our sessions:</p>
+<blockquote>
+<ul>
+<li>having a comfortable and spacious room with all the necessary tools like big screen and a mechanic keyboard <!-- -->✌</li>
+<li>defining roles before each session, we've had the Driver who types in code and Navigator who discuss the idea
+and guide the Driver.</li>
+<li>respecting timing is a key, it's better to hand the keyboard over with a broken test than overtaking.</li>
+<li>we've been driven by basic user stories at the beginning in order to focus on technical architecture.</li>
+<li>we discuss, debate and argue our ideas when we think they are right, no one or idea should be discarded.</li>
+<li>Believing that there no strict model or perfect one to follow, a retrospective is held weekly to evaluate our mob
+programming enrollment.</li>
+</ul>
+</blockquote>
+<p>Before experiencing the mob programming I was asking my self how can will be productive by letting 8 developers to
+work on the same thing for weeks, I confess how was am I surprised by what we were able to deliver,
+a full feature bringing a real added value to our customers. If you ask me for the secret the only answer I have
+is we were doing the work the most perfect way it could, avoiding broking the build, hard merges, and enduring
+exchanges by emails or pull requests to agree on a design, interoperability, components communication, and best
+practice adoption. In addition discussing ideas and approaches helped us a lot to select the best ones.</p>
+<p>During these sessions, we build a wonderful team spirit, communication protocols, and a homogeneous mindset. without
+omitting the impact on our motivation and commitment. I was really happy with this journey and the results harvested at
+the end.</p>
+<p>I highly recommend giving this approach a try even though for a short time, I consider practicing is the best way to
+understand, evaluate and conclude if it could bring the right expectations for your team.</p>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="software" term="software"/>
+        <category label="engineering" term="engineering"/>
+        <category label="agile" term="agile"/>
+        <category label="team" term="team"/>
+        <category label="collaboration" term="collaboration"/>
+        <category label="mob programming" term="mob programming"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A 5 years journey of software engineering]]></title>
+        <id>https://algodema.com/blog/a-five-years-journey-of-software-engineering</id>
+        <link href="https://algodema.com/blog/a-five-years-journey-of-software-engineering"/>
+        <updated>2020-03-10T12:56:31.000Z</updated>
+        <summary type="html"><![CDATA[author]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/5-years-journey-of-software-engineering-6b7ae3c428733d0fb22fb5c1f0f99155.jpeg" width="1024" height="640" class="img_ev3q"></p>
+<p>Just another story of a software developer that has been started 5 years ago officially by getting my first job within the 3D Modeling Software leader provider worldwide as a junior software developer with a lot of passion and energy to write lines of code and make an impact but for sure at this stage, I can't see it because it wasn't about creating my mobile application that millions of people around the world are using or my web application with many active users a day, but a few years later it is and the product I worked on is making a great success and despite my modest contribution I do proud of this work no matter I left the company looking forward new challenges in a completely different sector.</p>
+<p>Meanwhile, I was working with a group of friends on a platform, dreaming of reinventing the food making and delivery, we started developing "otchi" a web and mobile application for sharing meals and creating recipes but 7 months later we give on the project up and decided to stop investing our free time on this wonderful project, I confess this failure was very disappointing but I told my self "Hey! how can you ignore all the stuff you learned, it's just another try why not to repeat". late 2017 I joined a medical equipment manufacturer to develop software that runs on these different machines from Scanners to MRI and you can imagine that excitation I'm experiencing to start such mission with this sentence in my head</p>
+<blockquote>
+</blockquote>
+<p>I'm going to develop software that runs on medical equipment helping in saving lives and bring smiles to those who
+are suffering from some diseases.</p>
+<p>During this experience, I learned a lot about software development, first time to use the agile methods "SCRUM", go on production quickly and communicating with users directly, their feedbacks and comments were useful, I realized that a software developer should never be like staying at the corner of your open space implementing user stories, and whether you are developer, tester or product owner this human interaction is mandatory to well understand the needs and bring the right added value instead of delivering features.</p>
+<p>Yes! I'm leaving this job, this company, this role, I'm leaving my manager because even within the best technical environment a developer can work in and enjoy his collaboration we cannot avoid the conflicts when it reaches a closed door. This time the lesson is simple as "human first and I'm leaving for the interest of everybody not to run away from the confrontation"</p>
+<p>I do appreciate all the conflict discussions I've had with my manager because we debated <strong>ideas</strong> and visions, not
+personas and behaviors.</p>
+<p>Hopefully, a few months ago from writing these lines, I landed in the right place I was always looking for, Here we believe that culture and values are very important and working with people with who share the same insights and attitudes is not just titles that we put on company's website but that is part of everybody's mindset.</p>
+<p>Here at my current job, we develop MVPs and squads are completely autonomous for their stack and architecture choices meanwhile we all teams within this happy community are using agile methods convinced that these methods not only increases productivity but also facilitates project management, improves the quality of work and makes flexible change possible.</p>
+<p>It was about sharing my career path until now in a short story, I do like to call it a journey with the faith that our job
+is part of our overall life, not an only professional one, this is why I'll always trying to do it with <strong>passion</strong>
+, and surrounded with analogous and complementary <strong>people</strong>.</p>
+<p>#learning is a never-ending story</p>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="software" term="software"/>
+        <category label="engineering" term="engineering"/>
+        <category label="work" term="work"/>
+        <category label="impact" term="impact"/>
+        <category label="path" term="path"/>
+        <category label="collaboration" term="collaboration"/>
+        <category label="people" term="people"/>
+        <category label="passion" term="passion"/>
     </entry>
 </feed>
