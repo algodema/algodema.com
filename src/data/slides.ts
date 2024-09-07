@@ -10,7 +10,8 @@ export const slides: Slide[] = [
       alt: "software testing",
     },
     readMoreLabel: "Read more",
-    readMoreLink: "/",
+    readMoreLink:
+      "/blog/software-testing-from-separate-activity-to-core-development",
   },
   {
     title: "Few and permanent rather than many and intermittent",
@@ -21,6 +22,6 @@ export const slides: Slide[] = [
       alt: "few and permanent",
     },
     readMoreLabel: "Read more",
-    readMoreLink: "/",
+    readMoreLink: "/blog/few-and-permanent-many-and-intermittent",
   },
 ];

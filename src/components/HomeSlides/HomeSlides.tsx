@@ -1,4 +1,5 @@
 import { slides } from "@site/src/data/slides";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -26,7 +27,7 @@ function HomeSlides() {
               className={clsx(
                 `button button--primary  button--lg ${styles.readMore}`
               )}
-              href={slide.readMoreLink}
+              href={useBaseUrl(slide.readMoreLink)}
             >
               {slide.readMoreLabel}
             </a>
