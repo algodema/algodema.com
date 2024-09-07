@@ -559,8 +559,8 @@ any other combination of DevOps tools from the ones listed in previous paragraph
         </item>
         <item>
             <title><![CDATA[Software testing from separate activity to core development]]></title>
-            <link>https://algodema.com/blog/software-testing-from-separate-activity-to-core-development"</link>
-            <guid>https://algodema.com/blog/software-testing-from-separate-activity-to-core-development"</guid>
+            <link>https://algodema.com/blog/software-testing-from-separate-activity-to-core-development</link>
+            <guid>https://algodema.com/blog/software-testing-from-separate-activity-to-core-development</guid>
             <pubDate>Sat, 06 Mar 2021 12:56:31 GMT</pubDate>
             <description><![CDATA[author]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/software-testing-from-separate-activity-to-core-development-9cad4fb888f382f8dd9e54430b619909.jpeg" width="1136" height="798" class="img_ev3q">
@@ -584,7 +584,7 @@ from a developer's perspective. Below is a non-exhaustive list of test types:</p
 <li>Security and Vulnerability testing</li>
 <li>Monkey testing</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="unit-tests">Unit tests<a href="https://algodema.com/blog/software-testing-from-separate-activity-to-core-development%22#unit-tests" class="hash-link" aria-label="Direct link to Unit tests" title="Direct link to Unit tests">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="unit-tests">Unit tests<a href="https://algodema.com/blog/software-testing-from-separate-activity-to-core-development#unit-tests" class="hash-link" aria-label="Direct link to Unit tests" title="Direct link to Unit tests">​</a></h2>
 <p>This type of software testing covers small and isolated components of software to make sure they behave as expected,
 Nowadays these code fragments are writing by the developer itself while implementing the product's features. There are some
 properties that these tests should hold</p>
@@ -593,7 +593,7 @@ properties that these tests should hold</p>
 <li>Run frequently as part of the continuous integration process, so they are executed after each commit.</li>
 <li>They need to be readable, Maintainable, and Trustworthy.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-tests">Integration tests<a href="https://algodema.com/blog/software-testing-from-separate-activity-to-core-development%22#integration-tests" class="hash-link" aria-label="Direct link to Integration tests" title="Direct link to Integration tests">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-tests">Integration tests<a href="https://algodema.com/blog/software-testing-from-separate-activity-to-core-development#integration-tests" class="hash-link" aria-label="Direct link to Integration tests" title="Direct link to Integration tests">​</a></h2>
 <p>The main role of this type of test is to confirm that the independently developed components that compose an application
 or a system are working as expected together. For example in a Layered architecture-based application, you may want to make
 sure that your DAO or Repositories are working fine, or verify the web layer interactions with the business layer are matching
@@ -604,7 +604,7 @@ the desired behavior, here where the integration tests come to.</p>
 <li>Verify the data sent by a component is well-formatted by another one before processing it.</li>
 <li>Verify components handle cases where they lost connectivity between them.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="end-to-end-tests">End to End Tests<a href="https://algodema.com/blog/software-testing-from-separate-activity-to-core-development%22#end-to-end-tests" class="hash-link" aria-label="Direct link to End to End Tests" title="Direct link to End to End Tests">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="end-to-end-tests">End to End Tests<a href="https://algodema.com/blog/software-testing-from-separate-activity-to-core-development#end-to-end-tests" class="hash-link" aria-label="Direct link to End to End Tests" title="Direct link to End to End Tests">​</a></h2>
 <p>They may take also the name of broad-stack tests or full-stack tests, Despite their slow time of execution they constitute
 an important value for the product's quality as they test the behavior of the application in a real environment.
 They are intended to reproduce the end-user interaction with the product and make sure that every feature is responding as it what designed.
