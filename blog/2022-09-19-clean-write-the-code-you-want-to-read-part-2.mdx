@@ -1,0 +1,206 @@
+---
+slug: "clean-write-the-code-you-want-to-read-part2"
+title:  "Clean code: Write The Code You Want To Read (Part 2)"
+date:   2022-09-19 10:06:46 +0100
+authors: [reda]
+tags: [software, clean code, craftmanship, developer]
+---
+![author](/img/blog/clean-code-write-the-code-you-want-to-read-part-2.jpg)
+[photo source](https://stock.adobe.com/fr/search?k=dactylo&asset_id=809833487)
+
+## Functions
+
+Functions constitute a centric component in the recent software programs, the reason why we should care a lot about all
+of
+their aspects from naming, length, composition, arguments and error handling.
+
+### Small
+
+Yes "small" is the main rule a function should comply with, so it tell us what it does exactly because a function should
+do one thing, do it well and only.
+
+To keep the function also short, [if, else, while, etc ...] statements should be only one line, and probably this line
+is function call:
+
+````kotlin
+fun bookTrain(bookingRequest: BookingRequest): Booking {
+    validBookingRequest(bookingRequest)
+    val booking = Booking.from(bookingRequest)
+    booking.status(BookingStatus.PENDING)
+    return booking
+}
+````
+
+### Single abstraction level
+
+Or the principle of "Doing one thing", the idea is not about writing function with single line of code, or one step but
+writing it with the restriction to cover only one computation, see example below:
+
+`````kotlin
+   fun validBookingRequest(bookingRequest: BookingRequest) {
+    if (bookingRequest.from == bookingRequest.to) {
+        throw InvalidBookingRequestException("departure and arrival stations are the same")
+    } else if (bookignRequest.stops > 5) {
+        throw InvalidBookingRequestException("more than 5 stops is not allowed")
+    }
+
+}
+`````
+
+### The Step-down rule
+
+We write code to be read, so writing functions in an order like a narrative text, if we have to put the functions of the
+above
+two examples, they should appear in the following order:
+
+````kotlin
+   fun bookTrain(bookingRequest: BookingRequest): Booking {
+    validBookingRequest(bookingRequest)
+    ...
+
+    fun validBookingRequest(bookingRequest: BookingRequest) {
+        ...
+
+````
+
+we can see clearly that **the caller function is above the called one**
+
+### Switch statements
+
+While switch statement can easily impact badly you clean code, The key issue with switch statements is that they often
+lead to violations of the Single Responsibility Principle (SRP) and can make code harder to extend and maintain.
+
+````kotlin
+   fun calculateWashCost(vehicle: Vehicle): Money {
+    when (vehicle.type) {
+        CAR -> calculateCarWashCost(vehicle)
+        BUS -> calculateBusWashCost(vehicle)
+        MOTOCYCLE -> calculateMotoCycleWashCost(vehicle)
+        else -> {
+            throw InvalidVehiculeType(vehicle.type)
+        }
+    }
+}
+````
+
+There many issues with this function above, first the function is large and each time new vehicle type will be added, it
+will grow even more.
+Second it violates the Single Responsibility Principle (SRP) because there is more one reason for it to change, but the
+worst probem is there will be more functions
+that will have the same structure:
+
+    * CalculateParkingCost(vehicle: Vehicle): Money
+    * CalculateCarbonTax(vehicle: Vehicle): Money
+
+A solution proposed by Robert C.Martin is his book "Clean Code" is to hide the switch statement in an abstract factory,
+and the factory will use the switch statement
+to create the appropriate instances of the derivatives of Vehicle. And the various functions such as
+CalculateParkingCost, CalculateCarbonTax will be dispatched polymorphic through the Vehicle interface.
+
+````kotlin
+
+abstract class Vehicle {
+    abstract fun calculateWashCost(): Money
+    abstract fun calculateParkingCost(): Money
+    abstract fun calculateCarbonTax(): Money
+}
+
+abstract interface VehicleFactory {
+    abstract fun createVehicle(vehicle: Vehicle): Vehicle
+}
+
+class VehicleFactoryImpl() {
+    fun createVehicle(vehicle: Vehicle): Vehicle {
+        return when (vehicle.type) {
+            CAR -> Car(vehicle)
+            BUS -> Bus(vehicle)
+            MOTOCYCLE -> MotoCycle(vehicle)
+            else -> {
+                throw InvalidVehiculeType(vehicle.type)
+            }
+        }
+    }
+}
+````
+
+### Functions common patterns
+
+Don't hesitate to make your function's name long if necessary in order to ensure a significant name.
+When it comes to function argument the ideal number is 3, then comes one (monadic), followed closely by two (dyadic).
+Three arguments (triadic) should be avoided where possible. The challenge with arguments resides in testing you can
+imagine the difficulty of writing all
+the test cases to ensure that all the various combinations of arguments work correctly.
+Have you ever heard about "Flag Argument"? Flag argument is an argument of type boolean where the function do a thing
+when it's true and another thing if it's false,
+these arguments violates the Single Responsibility Principle (SRP).
+
+#### Argument Objects
+
+If a function needs more than two or three arguments, there is probably a way to wrap some of them into an object, see
+the following example:
+
+`````kotlin
+  fun deployApplication(applicationId: Int, cpu: Int, memory: Int, storage: Int, tag: String) {
+    //  do something ...
+}
+`````
+
+We can reduce the number of argument by passing an object representing the infrastructure requirements, see example
+below
+
+`````kotlin
+  fun deployApplication(applicationId: Int, infrastructureRequirements: InfrastructureRequirements, tag: String) {
+    // do something ...
+}
+`````
+
+#### Command Query Separation
+
+The Command-Query Separation (CQS) principle states that a function should either perform an action (a command) or
+return
+data (a query), but not both. This makes the code more predictable, easier to test, and cleaner.
+
+````kotlin
+  // Query function: returns whether the withdrawal can happen (no state modification)
+fun canWithdraw(balance: Int, amount: Int): Boolean {
+    return amount <= balance
+}
+
+// Command function: performs withdrawal by returning the new balance (state modification, no return of query data)
+fun withdraw(balance: Int, amount: Int): Int {
+    return if (canWithdraw(balance, amount)) {
+        balance - amount  // Returns the updated balance
+    } else {
+        balance  // No changes if insufficient funds
+    }
+}
+
+fun main() {
+    var balance = 100
+
+    // Query if withdrawal is possible
+    if (canWithdraw(balance, 50)) {
+        // Command: Update the balance by performing withdrawal
+        balance = withdraw(balance, 50)
+        println("Withdrawal successful. New balance: $balance")
+    } else {
+        println("Insufficient funds")
+    }
+}
+
+````
+
+## Conclusion
+
+Let's admit that functions are fundamental components of our code, so it's crucial to invest time and effort into defining them properly, including their names, arguments, and statements.
+Writing software is similar to any other form of writing—you begin by drafting your ideas, then refine them until they flow smoothly. Remember, we write code not just for execution, but also to be easily understood by others.
+
+
+----
+
+* [The Clean Code Blog](https://blog.cleancoder.com/)
+* [Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
+* [Functional Design: Principles, Patterns, and Practices by Robert C. Martin](https://www.oreilly.com/library/view/functional-design-principles/9780138176518/)
+* [10 steps to clean code](https://www.pluralsight.com/blog/software-development/10-steps-to-clean-code)
+* [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html)
+
