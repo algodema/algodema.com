@@ -113,6 +113,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    mermaid: {
+      theme: {light: 'neutral', dark: 'forest'},
+      options: {
+        maxTextSize: 50,
+      },
+    },
   } satisfies Preset.ThemeConfig,
 
   customFields: {
@@ -120,10 +126,7 @@ const config: Config = {
     emailJsServiceId: "service_5gkozod",
     emailJsUserId: "h8i8I6MeNsardrZHm",
   },
-
-
-
-
+  themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;
