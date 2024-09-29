@@ -1592,7 +1592,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-mermaid@^3.5.1":
+"@docusaurus/theme-mermaid@^3.5.2":
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-mermaid/-/theme-mermaid-3.5.2.tgz#7d64289e6f2493b9fc0d5f2e8f66da4c9d884db8"
   integrity sha512-7vWCnIe/KoyTN1Dc55FIyqO5hJ3YaV08Mr63Zej0L0mX1iGzt+qKSmeVUAJ9/aOalUhF0typV0RmNUSy5FAmCg==

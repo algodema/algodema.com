@@ -114,19 +114,20 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     mermaid: {
-      theme: {light: 'neutral', dark: 'forest'},
-      options: {
-        maxTextSize: 50,
-      },
+      theme: { light: "neutral", dark: "forest" },
     },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
 
   customFields: {
     emailJsTemplateId: "template_g011l8c",
     emailJsServiceId: "service_5gkozod",
     emailJsUserId: "h8i8I6MeNsardrZHm",
   },
-  themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;

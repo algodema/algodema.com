@@ -17,7 +17,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.5.1",
     "@docusaurus/preset-classic": "^3.5.1",
-    "@docusaurus/theme-mermaid": "^3.5.1",
+    "@docusaurus/theme-mermaid": "^3.5.2",
     "@emailjs/browser": "^4.3.3",
     "@mdx-js/react": "^3.0.0",
     "@storybook/react": "^8.0.10",
