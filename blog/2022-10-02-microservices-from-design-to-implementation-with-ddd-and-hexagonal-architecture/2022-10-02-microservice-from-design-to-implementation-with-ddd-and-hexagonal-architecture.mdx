@@ -1,12 +1,11 @@
 ---
-slug: "microservices-from-design-to-implementation-with-ddd-and-hexagonal-architecture.mdx"  
-title:  "Microservices from design to implementation with DDD and Hexagonal Architecture"  
-date:   2022-10-02 15:12:03 +0100  
-authors: [reda]  
+slug: 'microservices-from-design-to-implementation-with-ddd-and-hexagonal-architecture.mdx'
+title: 'Microservices from design to implementation with DDD and Hexagonal Architecture'
+date: 2022-10-02 15:12:03 +0100
+authors: [reda]
 tags: [hexagonal architecture, ddd, microservices, clean code]
 id: bmwhaad
 ---
-
 
 ![](/img/blog/build-microservice-with-hexagonal-architecture-and-ddd.png)
 
@@ -14,19 +13,19 @@ id: bmwhaad
 
 ## Use case
 
-In this paragraph, we gather the requirements from a business perspective before discussing how architectural patterns and software approaches can help build a product.
+In this phase, we begin by collecting requirements from a business perspective to ensure a thorough understanding of the objectives. Once these requirements are established, we then investigate how architectural patterns and software development methodologies can be utilized to construct the product effectively.
 
-> Today, local grocery stores need to visit large distribution companies or call them one by one to check prices, stock availability, and delivery times in order to purchase merchandise.  
-> This process consumes a lot of time and effort for grocery managers, which is why we want to address this pain point by building a platform where managers can check prices and stock levels, order merchandise, and monitor deliveries.
+> Currently, local grocery stores must either visit large distribution companies or contact them individually to inquire about pricing, stock availability, and delivery schedules when placing orders. This process is time-consuming and inefficient for grocery managers.
+> To address this challenge, we propose developing a platform that enables managers to easily check prices, view stock levels, place orders, and track deliveries in one streamlined solution.
 
 ## Personas and User Journey
 
-To build a system that addresses the right issues and adds real value, every part of the system should be designed with the users in mind. That's why it's crucial to understand them well, their frustrations, motivations, and expectations for this new product we are building.
+To develop a system that effectively tackles the relevant challenges and provides significant value, it is imperative that every aspect of the system is designed with users in focus. This makes it vital to thoroughly understand their frustrations, motivations, and expectations regarding the new product we are creating
 
-* **Grocery Manager**
-    * **Profile:** Typically has a bachelor's degree.
-    * **Frustrations:** Running out of stock, lack of visibility over deliveries, price comparison is a time-consuming task.
-    * **Motivations:** Save management time, focus on customer relationships and service quality, ensure stock levels are always adequate.
+- **Grocery Manager**
+  - **Profile:** Typically has a bachelor's degree.
+  - **Frustrations:** Running out of stock, lack of visibility over deliveries, price comparison is a time-consuming task.
+  - **Motivations:** Save management time, focus on customer relationships and service quality, ensure stock levels are always adequate.
 
 # Architecture & Design
 
@@ -34,19 +33,21 @@ In the previous section, we presented a brief overview of the business domain, r
 
 ## Architectural Style
 
-While the brainstorming outputs are limited for this example, we can easily imagine different services: Order Service, Provider Service, Delivery Service, and Product Service.  
-Now, imagine we want to build all these services in parallel, with different development teams specializing in different tech stacks. We want these services to remain decoupled from each other, so a change in one service's design doesn't impact the others.  
-When it comes to **deployment**, we want to be able to deploy the __Product Service__ before the others to bring value as soon as possible. This implies that services should be deployable independently and scalable.
+While the brainstorming outputs for this example are somewhat limited, we can easily envision various services, such as Order Service, Provider Service, Delivery Service, and Product Service. Now, suppose we want to develop all these services simultaneously, with different teams specializing in distinct technology stacks. It is essential that these services remain decoupled from one another, ensuring that a change in the design of one service does not affect the others.
 
-Also, by organizing our product around services, we can ensure fault tolerance. For instance, if the Delivery Service is down, users should still be able to use other services. For all these reasons, we are convinced that a **microservices architecture** is the right architectural style for this project.
+Regarding deployment, we aim to deploy the Product Service before the others to deliver value as quickly as possible. This necessitates that the services be independently deployable and scalable.
 
-## Domain Design 
+By organizing our product around services, we can enhance fault tolerance. For example, if the Delivery Service is unavailable, users should still be able to access other services. For these reasons, we believe that a microservices architecture is the most suitable architectural style for this project.
+
+Regarding deployment, we aim to deploy the Product Service before the others to deliver value as quickly as possible. This requires that services be independently deployable and scalable.
+
+## Domain Design
 
 The complexity of the business domain, the rules, and the number of services (system components) lead us to consider Domain-Driven Design (DDD). So, what is DDD?
 
 :::info
 
-DDD, as described in the excellent book *Domain-Driven Design* by Eric Evans (Addison-Wesley Professional, 2003), is an approach to building complex software applications that is centered around developing an object-oriented domain model.  
+DDD, as described in the excellent book _Domain-Driven Design_ by Eric Evans (Addison-Wesley Professional, 2003), is an approach to building complex software applications that is centered around developing an object-oriented domain model.  
 A domain model captures knowledge about a domain in a form that can be used to solve problems within that domain.
 
 :::
@@ -55,27 +56,23 @@ In traditional object-oriented design, a domain model is a collection of interco
 
 ![Figure 1](algodema_blog_bmwhaad_fig1-2024-09-29-210114.svg)
 
-*Figure 1: Object Oriented Domain Model*
+_Figure 1: Object Oriented Domain Model_
 
-With this design,Performing operations like loading or deleting an Order object involves more than just the Order;
-it includes related data like order items and delivery details. The lack of clear boundaries complicates updates, as business rules, like minimum order amounts, must be enforced carefully to maintain invariants.
+With this design, operations such as loading or deleting an Order object encompass more than just the Order itself; they also involve related data, such as order items and delivery details. The absence of clear boundaries complicates updates, as business rules, imagine a business logic such as "minimum order amounts" must be enforced meticulously to preserve invariants
 
 This is where DDD can help, by using Aggregates
+
 > An aggregate is a cluster of domain objects within a boundary that can be treated as a unit
 
-Figure 2 shows a simplified version of the domain model aggregates. Designing domain model using the DDD Aggregate pattern recommand that aggregates match a set of rules:
-    1. Reference only the aggregate root
-    2. Inter-aggregate references must use primary keys
-    3. One transaction creates or updates one aggregate
-
+Figure 2 shows a simplified version of the domain model aggregates. Designing domain model using the DDD Aggregate pattern recommand that aggregates match a set of rules: 1. Reference only the aggregate root 2. Inter-aggregate references must use primary keys 3. One transaction creates or updates one aggregate
 
 ![Figure 2](algodema_blog_bmwhaad_fig2-2024-09-29-210501.svg)
 
-*Figure 2: Domain Model Aggregates Simplified*
+_Figure 2: Domain Model Aggregates Simplified_
 
 # Implementation
 
-Now that we have designed the domain model aggregates and the achitecture implementation view __Microservices__, let's dive into the architecture logical view __Hexagonal Architecture__ , please refer to this post to learn about
+Now that we have designed the domain model aggregates and the achitecture implementation view **Microservices**, let's dive into the architecture logical view **Hexagonal Architecture** , please refer to this post to learn about
 [Architecture Implementation view, Hexagonal option and why we adopt it](/blog/2021-10-17-software-architecture-logical-view.mdx#the-hexagonal-architecture-style)
 
 I'm going to use Kotlin as programming language and maven as a build tool
@@ -85,33 +82,36 @@ I'm going to use Kotlin as programming language and maven as a build tool
 ## Bootstrap the project
 
 Let's consider the following feature: place order
+
 > As a grocery manager, I need to place an order for a product so I can provision the stock
 > Constraint 1: The minimum order quantity is 20.
 
 Using maven build tool, let's create a project for kotlin.
 
-    1. create a maven project using the following cmd (you can change group id and artifact id):
+    1. create a maven project using the following cmd:
+
     ```shell
-            mvn archetype:generate \
+        mvn archetype:generate \
         -DgroupId=com.algodema \
         -DartifactId=grocery-marketplace-order-service \
         -DarchetypeArtifactId=maven-archetype-quickstart \
         -DarchetypeVersion=1.4 \
         -DinteractiveMode=false
     ```
+
     2. convert the project to kotlin by replacing the src/main/java and src/test/java directories with src/main/kotlin
     3. modify pom.xml for Kotlin, JUnit, and AspectJ
     4. checkout the project on github: (https://github.com/algodema/microservices-labs/tree/main/grocery-marketplace-order-service)
-    
-## Implement `place order` feature using TDD
 
-What about starting with writing a test scenario for our uese case using TDD (Test Driven Development), this approch help me immediately implement business logic,
+## Implement the `place order` feature using TDD
+
+What about starting with writing a test scenario for our uese case using TDD (Test Driven Development), this approach help me immediately implement business logic,
 in this case ensure no order will be created with quantity less than 20 unit.
-    
+
     ```Kotlin
         @Test
         fun `should not place order with quantity lower than 20`() {
-        
+
             val productId: ProductId = ProductId(UUID.randomUUID())
             val providerId: ProviderId = ProviderId(UUID.randomUUID())
             val quantity: Int = 16
@@ -126,39 +126,43 @@ I started by creating "PlaceOrderFeatureTest" test class, then writing my first 
 ![Figure 3](order-service-project-structure-1.png)
 
 :::note
-Under the package domain, I created two sub packages, features and models. Models contains the representations of our domain models such as Order, OrderId, ProductId, OrderState. Where features sub package
-contains our features classes, for now we have: PlaceOrderFeature.
-Note that under the models packages, we group classes under the same bussiness concern.
+Within the *domain* package, I created two sub-packages: *features* and *models*. The *models* sub-package includes representations of key domain entities, such as *Order*, *OrderId*, *ProductId*, and *OrderState*.
+Meanwhile, the *features* sub-package contains feature-specific classes, with *PlaceOrderFeature* being the current implementation. It's important to note that in the *models* package, we organize classes according to their respective business domains.
 :::
 
-The approach used is declaring productId, providerId, and placeOrder instances before their classes exist then gradually create those classes and organizing them into packages 
-following the hexagonal architecture principles putting the business logic at the center (represented by the domain package).
+The approach involves declaring instances of `productId`, `providerId`, and `placeOrder` prior to the existence of their respective classes. Subsequently, these classes are developed and organized into packages in accordance with the principles of hexagonal architecture,
+which positions business logic at the core, as represented by the domain package.
 
 We continue writing tests, they should be fixed and failed as we implement the business requirements in our place order feature.
 
 ## Infrastructure implementation
 
 Now that we created our first feature, we would like to expose it through a REST API endpoint, but also persist the created Order
-in a storage, for the purpose of this tutorial, we will implement a __in-memory__ persistence.
+in a storage, for the purpose of this tutorial, we will implement a **in-memory** persistence.
 
 The hexagonal architecture defines ports and adapters as interfaces and implementations consequentially used to make the domain interacting and connecting with other components of the application such as (persistency, api, messaging, ...)
 
 :::note
-A __port__ defines a set of operations and is how the business logic interacts with what's outside it. For our example in kotlin these ports are a Java/Kotlin Interfaces.
-An __adapter__ handles requests from the outside world, or the business logic by invoking an external application or service (database, message broker, ...).
-Both ports and adapters could be seperated into inbound and outbound to differentiate request to business logic and requests inoked by it.
+
+A **port** defines a set of operations that facilitate interaction between business logic and external systems.
+In our Kotlin example, these ports are represented by Java/Kotlin interfaces.
+An **adapter** manages requests from external sources or from the business logic itself by invoking external applications or services, such as databases or message brokers.
+Both ports and adapters can be categorized as inbound or outbound to distinguish between requests directed toward the business logic and those initiated by it.
+
 :::
 
-:::warning
+:::info `Ports destination packages`
+
 Ports will reside in the same root package as domain because they are integrated part of it. For our example: com.algodema.grocery.markeplace.domain.ports
 As mentioned before, we separate them into 2 distinct sub packages:
-    * com.algodema.grocery.markeplace.domain.ports.inbound
-    * com.algodema.grocery.markeplace.domain.ports.outbound
+    - com.algodema.grocery.markeplace.domain.ports.inbound
+    - com.algodema.grocery.markeplace.domain.ports.outbound
 
 Where adapters reside in the infrascture root package that we create to group all infrastcutures adapters such as:
-    * REST API controllers classes
-    * InMemory, Postgres or any other Repository implementations that serve to persist data.
-    * External Systems integration such as SAPClient for example.
+    - REST API controllers classes
+    - InMemory, Postgres or any other Repository implementations that serve to persist data.
+    - External Systems integration such as SAPClient for example.
+
 :::
 
 Let's create the follwing ports and adapters:
@@ -186,18 +190,18 @@ with the Spring framework @Repository in order to make it discoverable by Spring
     }
 ```
 
-Next we will introduce Spring framework at the infrascture layer to create REST API, we rely on the Spring frameork is dependency injection to make our components connexion decoupled
-Using the __Dependency Injection__ the place order feature will hold an instance of OrderRepository to save the order created, and at infrascture's api adappter the REST Controller will hold instances of our features
-by dependency injection too.
+Next, we will introduce the Spring framework at the infrastructure layer to create a REST API. We rely on the Spring framework's dependency injection to make our component connections decoupled.
+Using Dependency Injection, the place order feature will hold an instance of OrderRepository to save the created order, and at the infrastructure's API adapter, the REST Controller will hold instances of our features by dependency injection as well.
 
 :::note
+
 This is where Hexagonal Architecture shines. We can replace Spring by any other framework for exposing REST APIs or handling persistence without modifying the code within our domain.
 This decoupling keeps the domain safe, adaptable, and maintainable, allowing us to change or add new business rules independently of the infrastructure.
 For example, if we decide to switch to the Quarkus framework because it is better suited for cloud-native environments, the domain remains completely unaffected.
+
 :::
 
-Now in order to help Spring detect our features for dependency injection purpose, we will create a new root package named __ddd__
-that will contains the following Kotlin/Java annotation:
+To enable Spring to identify our features for dependency injection, we will create a new root package designated as ddd. This package will encompass the necessary annotations:
 
     1. Feature Annotation: marks our features classes
 
@@ -208,7 +212,8 @@ that will contains the following Kotlin/Java annotation:
     annotation class Feature()
 ```
 
-Once created we use the Feature annotation to mark our place order feature with it:
+
+After creation, we utilize the Feature annotation to designate our **place order** functionality accordingly.
 
 ```Kotlin
     @Feature
@@ -216,8 +221,11 @@ Once created we use the Feature annotation to mark our place order feature with 
         // ...
     }
 ```
-:::warning
-As mentioned before, we are going to use Spring boot, so we need to add Spring boot and Spring Web dependencies to our project  and Spring Boot Maven plugin to the maven build plugins.
+
+:::tip
+
+As previously noted, we will be utilizing Spring Boot for this project. Therefore, it is essential to incorporate the Spring Boot and Spring Web dependencies into our project, as well as to include the Spring Boot Maven plugin within the Maven build plugins.
+
 :::
 
 Let's create the OrdersApi in the infrastructure package under the sub package api, as follow:
@@ -251,8 +259,8 @@ Let's create the OrdersApi in the infrastructure package under the sub package a
     }
 ```
 
-Now we have to instrument Spring to be aware of our marked features in order to load them into it's bean container, For this purpose we create a configuration class
-in a sub package config under the infrastcuture package, See below our config class:
+We now need to configure Spring to recognize our annotated features, enabling them to be loaded into its bean container.
+To achieve this, we will create a configuration class within a subpackage named config under the infrastructure package. Below is our configuration class:
 
 ```Kotlin
     package com.algodema.grocery.marketplace.orderservice.infrastructure.config
@@ -273,7 +281,7 @@ in a sub package config under the infrastcuture package, See below our config cl
     open class DomainInjectionConfig
 ```
 
-All that remains is to convert our application's entry point class into a Spring boot application as follow:
+The final step is to transform our application's entry point class into a Spring Boot application as follows:
 
 ```Kotlin
     package com.algodema.grocery.marketplace.orderservice
@@ -290,7 +298,8 @@ All that remains is to convert our application's entry point class into a Spring
     }
 ```
 
-You may noticed the exsistence of the keyword open that preceed App, DomainInjectionConfig and InMemoryOrderRepository classes. Here is why
+You may have noticed the presence of the keyword "open" preceding the classes App, DomainInjectionConfig, and InMemoryOrderRepository. Here is the rationale behind this choice:
+
 :::note
 In Kotlin, classes are final by default, meaning they cannot be subclassed unless explicitly marked as open.
 This is different from languages like Java, where classes are open for inheritance by default unless marked as final.
@@ -299,38 +308,42 @@ In Spring Boot (and Spring Framework in general), many of its features rely on p
 For these proxy-based features to work, Spring needs to be able to create subclasses of certain beans, which means the classes need to be open.
 :::
 
-For the purpose of this exercice we decided to use the __open__ modifier to make our classes annotated with Spring not final as we have few classes,
-but for large application we can use the [All-open compiler plugin](https://kotlinlang.org/docs/all-open-plugin.html) instead of preceeding each classe required to be open with the __open__ keyword.
+For the purpose of this exercice we decided to use the **open** modifier to make our classes annotated with Spring not final as we have few classes,
+but for large application we can use the [All-open compiler plugin](https://kotlinlang.org/docs/all-open-plugin.html) instead of preceeding each classe required to be open with the **open** keyword.
 
-Finally, let's run the application either using:
+Finally, let's run the application either using your IDE such as Intellij Idea or from command line using maven as follow:
 
-    *. maven cmd:  mvn spring-boot:run
-    *. Your IDE
+```shell
+mvn spring-boot:run
+```
 
 Below a screenshot of the place order request response overview:
 
 ![Screenshot](./orders-api-place-order-overview.png)
 
 ### Conclusion
+
 This post has walked you through the entire process of building a fully functional Microservice, from design to implementation, using DDD and Hexagonal Architecture.
 My goal was to share knowledge and experiences regarding the methodology, architecture, and patterns needed to create a maintainable, extensible, and deployable Microservice. However, delivering a production-ready product requires addressing more advanced aspects. Below is a non-exhaustive list of such considerations:
 
-    *. Api Errors Handling
-    *. Application security
-    *. Database persistency
-    *. Api documentation
+    * Api Errors Handling
+    * Application security
+    * Database persistency
+    * Api documentation
+    * Env variable config
 
 Keep in mind that no single pattern, architectural style, or programming language suits all software product requirements. It's important to focus on understanding and defining the requirements, parameters, and challenges to make the most informed and effective decisions
 
-----
+---
+
 ## References:
 
-* [Domain Driven Design](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/)
-* [Microservies Patterns](https://www.manning.com/books/microservices-patterns)
-* [Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
-* [Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)
-* [The IoC Container](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html)
-* [Software Architecture: The Logical View](https://algodema.com/blog/software-architecture-logical-view)
-* [Software Architecture: The Implementation View](https://algodema.com/blog/software-architecture-implementation-view)
+- [Domain Driven Design](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/)
+- [Microservies Patterns](https://www.manning.com/books/microservices-patterns)
+- [Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
+- [Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)
+- [The IoC Container](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html)
+- [Software Architecture: The Logical View](https://algodema.com/blog/software-architecture-logical-view)
+- [Software Architecture: The Implementation View](https://algodema.com/blog/software-architecture-implementation-view)
 
 ---
