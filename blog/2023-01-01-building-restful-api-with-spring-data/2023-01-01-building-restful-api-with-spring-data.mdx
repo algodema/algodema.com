@@ -204,7 +204,7 @@ You can configure Flyway in your application.yml (for Spring Boot) to point to y
     enabled: true
     locations: classpath:db/migration
     baseline-on-migrate: true
-    clean-disabled: false
+    clean-disabled: falsek
 ```
 
 :::info 
@@ -226,9 +226,51 @@ data class Category(
     val name: String
 )
 ```
+:::warning
+Note that we didn't use the `@Table` annotation since the entity and table names are case-sensitive and match. If your table name differs, use `@Table(name = "tablename")`.
+:::
+
+#### Repositories
+a Spring Data Repository is an interface that allows you to interact with a data store (e.g., a relational database like MySQL, or a NoSQL database like MongoDB) without needing to write the implementation of the basic CRUD (Create, Read, Update, Delete) operations yourself.
+In our case we will use the Spring Data JPA Repository which is a specific type of repository provided by the Spring Data project that simplifies the implementation of the Data Access Layer (DAL) for JPA-based (Java Persistence API) applications.
+Below a snippet of our CategoryRepository:
+```kotlin
+@Repository
+interface CategoryRepository : JpaRepository<Category, Int>
+```
+As we may notice all we need to do is to implement an the generic interface JpaRepository that takes as first type an entity and a second type the identifier of the entity.
+
+#### Configurations
+By default, Spring Data REST provides basic CRUD operations for the entities it exposes, including: GET, POST, PUT, and DELETE. In order to restrict operations to readonly one by implementing the following Spring interface:
+```kotlin
+@Configuration
+class SpringDataRestConfiguration : RepositoryRestConfigurer {
+  companion object {
+        const val BASE_PATH = "/grocery/marketplace/query/api/v1"
+    }
+  override fun configureRepositoryRestConfiguration(
+        config: RepositoryRestConfiguration,
+        cors: CorsRegistry,
+    ) {
+        val exposureConfiguration = config.setBasePath(BASE_PATH).exposureConfiguration
+        exposureConfiguration.withItemExposure { metadata: ResourceMetadata?, httpMethods: ConfigurableHttpMethods ->
+            httpMethods.disable(HttpMethod.PUT)
+                .disable(HttpMethod.PATCH).disable(HttpMethod.POST).disable(HttpMethod.DELETE)
+        }
+            .withCollectionExposure { metadata: ResourceMetadata?, httpMethods: ConfigurableHttpMethods ->
+                httpMethods.disable(HttpMethod.PUT)
+                    .disable(HttpMethod.PATCH).disable(HttpMethod.POST).disable(HttpMethod.DELETE)
+            }
+    }
+}
+```
+* First we set the default base path of our query api to: "/grocery/marketplace/query/api/v1"
+* Second we restricted the allowed operations to only GET
+
+#### Application in Action
+When starting our Spring Boot Application, the Flyway will create the tables defined in our migration files and insert the data
 
 :::tip
-
 You may want to connect to the created postgres server and view databases, you can create a pgadmin docker container as follow
 ```sh
 docker run -p 5050:80 \
@@ -238,6 +280,42 @@ docker run -p 5050:80 \
   -d dpage/pgadmin4
 ```
 :::
+
+Now, let's access our query api and explore the result:
+
+```http
+GET /grocery/marketplace/query/api/v1
+Host: http://localhost:8080
+```
+```json
+{
+  "_links" : {
+    // a subset of the full response, other entities cutted to make this example shorter
+    "products" : {
+      "href" : "http://localhost:8080/grocery/marketplace/query/api/v1/products{?page,size,sort*}",
+      "templated" : true
+    },
+    "categories" : {
+      "href" : "http://localhost:8080/grocery/marketplace/query/api/v1/categories{?page,size,sort*}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/grocery/marketplace/query/api/v1/profile"
+    }
+  }
+}
+```
+
+Above we have a Spring Data REST response uses **HAL** format, which provides links to related resources. 
+
+- **"products"** and **"categories"**: These are URLs for fetching product and category data, with **templated** parameters (`page`, `size`, `sort`) that allow for pagination and sorting.
+- **"profile"**: A link to the API's profile, which provides metadata about the API.
+
+These links allow clients to navigate the API easily and interact with related data without hardcoding URLs.
+
+:::info
+Find the full source code of this project at the following Github Repository: https://github.com/algodema/microservices-labs/tree/main/grocery-marketplace-product-queryapi
+:::
 ---
 
 ## Conclusion
@@ -245,3 +323,8 @@ docker run -p 5050:80 \
 Understanding the levels of RESTful APIs helps developers create systems that are more robust, scalable, and easier to use. While many APIs remain at Levels 1 or 2, aiming for Level 3 ensures a fully RESTful experience that adheres to the principles of the web.
 
 Which level does your API align with? Share your thoughts in the comments below!
+
+----
+* [Richardson's Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
+* [Spring in Action](https://www.manning.com/books/spring-in-action-fifth-edition)
+* [Spring Data REST](https://docs.spring.io/spring-data/rest/reference/index.html)
