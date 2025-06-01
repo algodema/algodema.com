@@ -2,11 +2,150 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://algodema.com/blog</id>
     <title>algodema Blog</title>
-    <updated>2023-01-01T20:19:00.000Z</updated>
+    <updated>2023-03-03T21:19:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://algodema.com/blog"/>
     <subtitle>algodema Blog</subtitle>
     <icon>https://algodema.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Navigating the Tech Jungle: How a Technology Radar Guides Smart Choices]]></title>
+        <id>https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices</id>
+        <link href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices"/>
+        <updated>2023-03-03T21:19:00.000Z</updated>
+        <summary type="html"><![CDATA[Discover how a Technology Radar helps your team make strategic technology decisions and how to deploy your own radar website using an open-source project.]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="author" src="https://algodema.com/assets/images/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices-472749721385379c00182e0cf4016d33.jpg" width="612" height="489" class="img_ev3q"></p>
+<p>In today’s fast-evolving software landscape, staying updated with the latest tools, frameworks, and practices is both a challenge and an opportunity. One powerful way to stay on top is by using a <strong>Technology Radar</strong> — a curated, visual map that helps teams make smart technology decisions.</p>
+<p>If you want to build software that lasts, you need a compass to guide you. Let’s explore what a technology radar is, why it matters, and how adopting one can transform your team’s approach to technology.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-a-technology-radar-anyway">What Is a Technology Radar, Anyway?<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#what-is-a-technology-radar-anyway" class="hash-link" aria-label="Direct link to What Is a Technology Radar, Anyway?" title="Direct link to What Is a Technology Radar, Anyway?">​</a></h2>
+<p>Imagine a radar screen showing all the tech options — from emerging tools on the edge to proven stalwarts in the center. It visualizes:</p>
+<ul>
+<li><strong>Tech you should adopt now</strong></li>
+<li><strong>Tech you should evaluate or trial</strong></li>
+<li><strong>Tech to keep an eye on</strong></li>
+<li><strong>Tech to avoid</strong></li>
+</ul>
+<p>By plotting tools, frameworks, and practices into these rings, a radar clarifies which are ready for production, and which are hype or dead ends.</p>
+<p>This transparency empowers teams to align around shared technology decisions — avoiding fragmentation or chasing every shiny new thing.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-living-breathing-technology-radar">A Living, Breathing Technology Radar<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#a-living-breathing-technology-radar" class="hash-link" aria-label="Direct link to A Living, Breathing Technology Radar" title="Direct link to A Living, Breathing Technology Radar">​</a></h2>
+<p>A technology radar is not a static list but a <strong>living document</strong>, regularly updated by tech leads and experts. It categorizes technologies across different domains:</p>
+<ul>
+<li>Programming Languages</li>
+<li>Frameworks &amp; Libraries</li>
+<li>DevOps Tools</li>
+<li>Cloud Platforms</li>
+<li>Testing &amp; QA Tools</li>
+<li>And more</li>
+</ul>
+<p>Each tech is assigned to one of four rings:</p>
+<ul>
+<li><strong>Adopt</strong>: Mature, proven, recommended for immediate use.</li>
+<li><strong>Trial</strong>: Promising tech worth evaluating in projects.</li>
+<li><strong>Assess</strong>: Worth watching but not yet ready.</li>
+<li><strong>Hold</strong>: Technologies that have issues or are becoming obsolete.</li>
+</ul>
+<p>This methodical approach brings clarity to choices, reduces risk, and encourages innovation responsibly.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-your-team-needs-a-technology-radar">Why Your Team Needs a Technology Radar<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#why-your-team-needs-a-technology-radar" class="hash-link" aria-label="Direct link to Why Your Team Needs a Technology Radar" title="Direct link to Why Your Team Needs a Technology Radar">​</a></h2>
+<ol>
+<li>
+<p><strong>Encourages Strategic Technology Adoption</strong><br>
+<!-- -->With so many options, it’s tempting to jump on the latest trends. A radar prevents impulse decisions by grounding tech adoption in research and experience.</p>
+</li>
+<li>
+<p><strong>Facilitates Communication and Alignment</strong><br>
+<!-- -->Developers, architects, and management get a shared language and framework for discussing tech. This helps break down silos and build consensus.</p>
+</li>
+<li>
+<p><strong>Improves Onboarding and Knowledge Sharing</strong><br>
+<!-- -->New team members quickly grasp what’s recommended, what’s experimental, and what’s off-limits — reducing onboarding friction.</p>
+</li>
+<li>
+<p><strong>Supports Continuous Improvement</strong><br>
+<!-- -->By reviewing the radar regularly, teams keep learning and adapting, staying relevant without chaos.</p>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-build-your-own-technology-radar">How To Build Your Own Technology Radar<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#how-to-build-your-own-technology-radar" class="hash-link" aria-label="Direct link to How To Build Your Own Technology Radar" title="Direct link to How To Build Your Own Technology Radar">​</a></h2>
+<p>Here’s a simple approach:</p>
+<ul>
+<li><strong>Form a cross-functional team:</strong> Include engineers, architects, QA, and product owners.</li>
+<li><strong>Define radar categories:</strong> Pick domains relevant to your stack and projects.</li>
+<li><strong>Collect tech candidates:</strong> Gather inputs from projects, hackathons, experiments, and community buzz.</li>
+<li><strong>Evaluate and classify:</strong> Use criteria like maturity, adoption, risk, and business value.</li>
+<li><strong>Publish and update regularly:</strong> Keep it visible and alive — review every 3-6 months.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="putting-your-technology-radar-online-step-by-step-tutorial">Putting Your Technology Radar Online: Step-by-Step Tutorial<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#putting-your-technology-radar-online-step-by-step-tutorial" class="hash-link" aria-label="Direct link to Putting Your Technology Radar Online: Step-by-Step Tutorial" title="Direct link to Putting Your Technology Radar Online: Step-by-Step Tutorial">​</a></h2>
+<p>Building your technology radar is just the first step. Sharing it effectively across your organization is key to its success.</p>
+<p>One efficient way to do this is by using an open-source Technology Radar website project that visualizes your radar interactively and attractively.</p>
+<p>Here’s a detailed guide on how to deploy your own radar website using this project.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-clone-the-radar-website-repository">Step 1: Clone the Radar Website Repository<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#step-1-clone-the-radar-website-repository" class="hash-link" aria-label="Direct link to Step 1: Clone the Radar Website Repository" title="Direct link to Step 1: Clone the Radar Website Repository">​</a></h3>
+<p>Start by cloning the project repository to your local machine:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/AOEpeople/aoe_technology_radar.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd aoe_technology_radar</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-prepare-your-radar-data">Step 2: Prepare Your Radar Data<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#step-2-prepare-your-radar-data" class="hash-link" aria-label="Direct link to Step 2: Prepare Your Radar Data" title="Direct link to Step 2: Prepare Your Radar Data">​</a></h2>
+<p>Inside the repository, you’ll find a directory for data (commonly <code>src/data</code> or similar) with files in YAML or JSON format describing your radar contents.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-structure">Example structure:<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#example-structure" class="hash-link" aria-label="Direct link to Example structure:" title="Direct link to Example structure:">​</a></h3>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">rings</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Adopt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Trial</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Assess</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Hold</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">quadrants</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Languages &amp; Frameworks</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Tools</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Platforms</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Techniques</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">items</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> React</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">ring</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Adopt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">quadrant</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Languages &amp; Frameworks</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">description</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> A popular JavaScript library for building user interfaces.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> GraphQL</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">ring</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Trial</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">quadrant</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> Tools</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">description</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> A query language for APIs.</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-install-dependencies-and-run-locally">Step 3: Install Dependencies and Run Locally<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#step-3-install-dependencies-and-run-locally" class="hash-link" aria-label="Direct link to Step 3: Install Dependencies and Run Locally" title="Direct link to Step 3: Install Dependencies and Run Locally">​</a></h3>
+<p>The radar site typically uses <strong>Node.js</strong> and <strong>React</strong>. Install dependencies with:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Then start a local development server:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm run start</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Open your browser at <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">http://localhost:3000</a> (or specified port) to preview your radar live as you make changes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-customize-the-radar-website">Step 4: Customize the Radar Website<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#step-4-customize-the-radar-website" class="hash-link" aria-label="Direct link to Step 4: Customize the Radar Website" title="Direct link to Step 4: Customize the Radar Website">​</a></h2>
+<p>You can modify:</p>
+<ul>
+<li><strong>Colors and styling</strong>: Update CSS or theme files to match your brand.</li>
+<li><strong>Content</strong>: Add more metadata or links to technology items.</li>
+<li><strong>Layout</strong>: Adjust quadrant names, rings, or add new features.</li>
+</ul>
+<p>The project is designed to be easily extensible and customizable — check the <code>README</code> and source code for further options.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-build-and-deploy">Step 5: Build and Deploy<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#step-5-build-and-deploy" class="hash-link" aria-label="Direct link to Step 5: Build and Deploy" title="Direct link to Step 5: Build and Deploy">​</a></h2>
+<p>When you’re happy with your radar, build the static files:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm run build</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>This generates production-ready HTML, CSS, and JS files in the <code>build</code> folder.</p>
+<p>You can deploy these files to any static web host, such as:</p>
+<ul>
+<li><strong>GitHub Pages</strong></li>
+<li><strong>Netlify</strong></li>
+<li><strong>Vercel</strong></li>
+<li><strong>Your company’s internal web server</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-example-to-deploy-on-github-pages">For example, to deploy on GitHub Pages:<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#for-example-to-deploy-on-github-pages" class="hash-link" aria-label="Direct link to For example, to deploy on GitHub Pages:" title="Direct link to For example, to deploy on GitHub Pages:">​</a></h3>
+<ol>
+<li>Create a GitHub repository for your radar site.</li>
+<li>Push your built files to the repository’s <code>gh-pages</code> branch (or configure as needed).</li>
+<li>Enable GitHub Pages in your repo settings.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-world-benefits-of-a-technology-radar-website">Real-World Benefits of a Technology Radar Website<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#real-world-benefits-of-a-technology-radar-website" class="hash-link" aria-label="Direct link to Real-World Benefits of a Technology Radar Website" title="Direct link to Real-World Benefits of a Technology Radar Website">​</a></h2>
+<p>Publishing your radar online:</p>
+<ul>
+<li>Makes tech decisions transparent and accessible</li>
+<li>Encourages team engagement and contributions</li>
+<li>Provides a central reference point for all stakeholders</li>
+<li>Supports continuous updates without complicated distribution</li>
+</ul>
+<p>Teams using a tech radar website report faster decision cycles, better alignment, and more confident adoption of new technologies.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="final-thoughts">Final Thoughts<a href="https://algodema.com/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices#final-thoughts" class="hash-link" aria-label="Direct link to Final Thoughts" title="Direct link to Final Thoughts">​</a></h2>
+<p>In an ever-shifting technology landscape, a <strong>Technology Radar</strong> acts as a vital compass for your software journey. By thoughtfully building, maintaining, and sharing your radar through a user-friendly website, you create a culture of strategic tech choices and continuous improvement.</p>
+<p>If you want to stay ahead of the curve, start your own technology radar today — and empower your team with clarity and confidence.</p>
+<hr>
+<ul>
+<li><a href="https://techradar.aoe.com/" target="_blank" rel="noopener noreferrer">TechRadar By AOE</a></li>
+<li><a href="https://github.com/AOEpeople/aoe_technology_radar" target="_blank" rel="noopener noreferrer">Static site generator for AOE Technology Radar</a></li>
+</ul>]]></content>
+        <author>
+            <name>Reda Jaifar</name>
+            <uri>https://github.com/reda-jaifar</uri>
+        </author>
+        <category label="techradar" term="techradar"/>
+        <category label="software engineering" term="software engineering"/>
+        <category label="software company" term="software company"/>
+        <category label="at scale" term="at scale"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Building RESTFul API With Spring Data]]></title>
         <id>https://algodema.com/blog/building-restful-api-with-spring-data</id>
