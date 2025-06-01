@@ -2,7 +2,7 @@ import ContentLayout from "@site/src/components/ContentLayout";
 import ServicesSection from "@site/src/components/ServicesSection/ServicesSecion";
 import { CartaItem } from "@site/src/domain/ui/carta/CartaItem";
 import Layout from "@theme/Layout";
-import { services } from "../../data/services";
+import { services } from "../../data/services/services";
 import styles from "./index.module.css";
 
 function index() {

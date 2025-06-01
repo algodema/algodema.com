@@ -1,12 +1,29 @@
 .cartaListContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 0.25rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  align-items: stretch;
 }
 
-@media (min-width: 600px) {
-    .cartaListContainer {
-        flex-direction: row;
-    }
+/* Medium screens: 2 columns */
+@media (min-width: 640px) {
+  .cartaListContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens: 3 columns */
+@media (min-width: 1024px) {
+  .cartaListContainer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Optional: style the annex image */
+.cartaListContainer img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }

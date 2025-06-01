@@ -1,66 +1,114 @@
 .cartaContainer {
-    width: 100%;
-    margin-right: 0.5rem;
-    border-width: 1px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-
-
+  background: var(--ifm-background-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  max-width: 320px;
+  margin: 0.75rem auto;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
 }
 
-@media (min-width: 640px) {
-    .cartaContainer {
-        margin-bottom: 0.5rem;
-        height: 24rem;
-        width: 16rem;
-    }
+.cartaContainer:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
 }
 
 .cartaImageOnly {
-    border-width: 1px;
-    width: 24rem;
-    height: 24rem;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.1));
+  transition: filter 0.3s ease;
+}
+
+.cartaImageOnly:hover {
+  filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.2));
 }
 
 .cartaImage {
-    border-width: 1px;
-    width: 10;
-    height: 10rem;
-
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: inset 0 -2px 8px rgb(0 0 0 / 0.1);
 }
 
 .cartaContentContainer {
-    padding: 0.75rem;
+  padding: 1rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .cartaContentTitle {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    letter-spacing: -0.025em;
-    text-transform: capitalize;
-    font-size: large;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  transition: color 0.2s ease;
+}
+
+.cartaContentTitle:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
 }
 
 .cartaContentParagraph {
-    overflow: hidden;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    max-height: 8rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 400;
-    text-overflow: ellipsis;
-
+  flex-grow: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ifm-color-gray-700);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  max-height: 7.5rem;
+  text-overflow: ellipsis;
 }
 
 .cartaContentReadMore {
-    padding: 0.5rem;
-    border: 1px;
-    border-radius: 5px;
-    font-weight: 700;
-    color: var(--ifm-color-primary);
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-primary);
+  color: white; /* Keep white font */
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  text-decoration: none;
 }
 
-.cartaContentReadMore:hover {
-    color: var(--ifm-color-primary);
-    font-weight: bolder;
+.cartaContentReadMore:hover,
+.cartaContentReadMore:focus {
+  background-color: var(--ifm-color-primary-dark);
+  color: white; /* Keep font white on hover */
+  box-shadow: 0 5px 12px rgb(0 0 0 / 0.2);
+  outline: none;
+}
+
+.readMoreArrow {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.cartaContentReadMore:hover .readMoreArrow {
+  transform: translateX(4px);
+}
+
+@media (min-width: 640px) {
+  .cartaContainer {
+    max-width: 320px;
+  }
 }

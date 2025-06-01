@@ -1,0 +1,206 @@
+---
+slug: navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices
+title: "Navigating the Tech Jungle: How a Technology Radar Guides Smart Choices"
+description: "Discover how a Technology Radar helps your team make strategic technology decisions and how to deploy your own radar website using an open-source project."
+date: 2023-03-03 21:19:00 +0100
+authors: [reda]
+tags: [techradar, software engineering, software company, at scale]
+id: nttj
+---
+
+![author](/img/blog/navigating-the-tech-jungle-how-a-technology-radar-guides-smart-choices.jpg)
+
+# Navigating the Tech Jungle: How a Technology Radar Guides Smart Choices
+
+In today’s fast-evolving software landscape, staying updated with the latest tools, frameworks, and practices is both a challenge and an opportunity. One powerful way to stay on top is by using a **Technology Radar** — a curated, visual map that helps teams make smart technology decisions.
+
+If you want to build software that lasts, you need a compass to guide you. Let’s explore what a technology radar is, why it matters, and how adopting one can transform your team’s approach to technology.
+
+---
+
+## What Is a Technology Radar, Anyway?
+
+Imagine a radar screen showing all the tech options — from emerging tools on the edge to proven stalwarts in the center. It visualizes:
+
+- **Tech you should adopt now**
+- **Tech you should evaluate or trial**
+- **Tech to keep an eye on**
+- **Tech to avoid**
+
+By plotting tools, frameworks, and practices into these rings, a radar clarifies which are ready for production, and which are hype or dead ends.
+
+This transparency empowers teams to align around shared technology decisions — avoiding fragmentation or chasing every shiny new thing.
+
+---
+
+## A Living, Breathing Technology Radar
+
+A technology radar is not a static list but a **living document**, regularly updated by tech leads and experts. It categorizes technologies across different domains:
+
+- Programming Languages  
+- Frameworks & Libraries  
+- DevOps Tools  
+- Cloud Platforms  
+- Testing & QA Tools  
+- And more  
+
+Each tech is assigned to one of four rings:
+
+- **Adopt**: Mature, proven, recommended for immediate use.  
+- **Trial**: Promising tech worth evaluating in projects.  
+- **Assess**: Worth watching but not yet ready.  
+- **Hold**: Technologies that have issues or are becoming obsolete.  
+
+This methodical approach brings clarity to choices, reduces risk, and encourages innovation responsibly.
+
+---
+
+## Why Your Team Needs a Technology Radar
+
+1. **Encourages Strategic Technology Adoption**  
+With so many options, it’s tempting to jump on the latest trends. A radar prevents impulse decisions by grounding tech adoption in research and experience.
+
+2. **Facilitates Communication and Alignment**  
+Developers, architects, and management get a shared language and framework for discussing tech. This helps break down silos and build consensus.
+
+3. **Improves Onboarding and Knowledge Sharing**  
+New team members quickly grasp what’s recommended, what’s experimental, and what’s off-limits — reducing onboarding friction.
+
+4. **Supports Continuous Improvement**  
+By reviewing the radar regularly, teams keep learning and adapting, staying relevant without chaos.
+
+---
+
+## How To Build Your Own Technology Radar
+
+Here’s a simple approach:
+
+- **Form a cross-functional team:** Include engineers, architects, QA, and product owners.  
+- **Define radar categories:** Pick domains relevant to your stack and projects.  
+- **Collect tech candidates:** Gather inputs from projects, hackathons, experiments, and community buzz.  
+- **Evaluate and classify:** Use criteria like maturity, adoption, risk, and business value.  
+- **Publish and update regularly:** Keep it visible and alive — review every 3-6 months.  
+
+---
+
+## Putting Your Technology Radar Online: Step-by-Step Tutorial
+
+Building your technology radar is just the first step. Sharing it effectively across your organization is key to its success.
+
+One efficient way to do this is by using an open-source Technology Radar website project that visualizes your radar interactively and attractively.
+
+Here’s a detailed guide on how to deploy your own radar website using this project.
+
+---
+
+### Step 1: Clone the Radar Website Repository
+
+Start by cloning the project repository to your local machine:
+
+```bash
+git clone https://github.com/AOEpeople/aoe_technology_radar.git
+cd aoe_technology_radar
+```
+
+## Step 2: Prepare Your Radar Data
+
+Inside the repository, you’ll find a directory for data (commonly `src/data` or similar) with files in YAML or JSON format describing your radar contents.
+
+### Example structure:
+
+```yaml
+rings:
+  - name: Adopt
+  - name: Trial
+  - name: Assess
+  - name: Hold
+
+quadrants:
+  - name: Languages & Frameworks
+  - name: Tools
+  - name: Platforms
+  - name: Techniques
+
+items:
+  - name: React
+    ring: Adopt
+    quadrant: Languages & Frameworks
+    description: A popular JavaScript library for building user interfaces.
+
+  - name: GraphQL
+    ring: Trial
+    quadrant: Tools
+    description: A query language for APIs.
+```
+
+### Step 3: Install Dependencies and Run Locally
+
+The radar site typically uses **Node.js** and **React**. Install dependencies with:
+
+```bash
+npm install
+```
+
+Then start a local development server:
+
+```bash
+npm run start
+```
+
+Open your browser at http://localhost:3000 (or specified port) to preview your radar live as you make changes.
+
+## Step 4: Customize the Radar Website
+
+You can modify:
+
+- **Colors and styling**: Update CSS or theme files to match your brand.
+- **Content**: Add more metadata or links to technology items.
+- **Layout**: Adjust quadrant names, rings, or add new features.
+
+The project is designed to be easily extensible and customizable — check the `README` and source code for further options.
+
+## Step 5: Build and Deploy
+
+When you’re happy with your radar, build the static files:
+
+```bash
+npm run build
+```
+
+This generates production-ready HTML, CSS, and JS files in the `build` folder.
+
+You can deploy these files to any static web host, such as:
+
+- **GitHub Pages**
+- **Netlify**
+- **Vercel**
+- **Your company’s internal web server**
+
+### For example, to deploy on GitHub Pages:
+
+1. Create a GitHub repository for your radar site.
+2. Push your built files to the repository’s `gh-pages` branch (or configure as needed).
+3. Enable GitHub Pages in your repo settings.
+
+
+## Real-World Benefits of a Technology Radar Website
+
+Publishing your radar online:
+
+- Makes tech decisions transparent and accessible  
+- Encourages team engagement and contributions  
+- Provides a central reference point for all stakeholders  
+- Supports continuous updates without complicated distribution  
+
+Teams using a tech radar website report faster decision cycles, better alignment, and more confident adoption of new technologies.
+
+## Final Thoughts
+
+In an ever-shifting technology landscape, a **Technology Radar** acts as a vital compass for your software journey. By thoughtfully building, maintaining, and sharing your radar through a user-friendly website, you create a culture of strategic tech choices and continuous improvement.
+
+If you want to stay ahead of the curve, start your own technology radar today — and empower your team with clarity and confidence.
+
+----
+
+* [TechRadar By AOE](https://techradar.aoe.com/)
+* [Static site generator for AOE Technology Radar](https://github.com/AOEpeople/aoe_technology_radar)
