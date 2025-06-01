@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./RightArrow.module.css";
 
-function RightArrow() {
-  return <span className={styles.arrow}></span>;
+interface RightArrowProps {
+  className?: string;
+}
+
+function RightArrow({ className = "" }: RightArrowProps) {
+  return <span className={`${styles.arrow} ${className}`} aria-hidden="true" />;
 }
 
 export default RightArrow;

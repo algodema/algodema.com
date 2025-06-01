@@ -1,5 +1,5 @@
-import Service from "../domain/service/Service";
-import { Language } from "../domain/translation/Language";
+import Service from "../../domain/service/Service";
+import { Language } from "../../domain/translation/Language";
 
 export const services: Service[] = [
   {
@@ -19,7 +19,7 @@ export const services: Service[] = [
     content:
       "Our dedication to engineering excellence has propelled us to emerge as a premier technology consultancy, leveraging global teams' capabilities to deploy software on a large scale.",
     image: {
-      src: "/img/services/engineering.jpg",
+      src: "/img/services/programming.avif",
       alt: "engineering",
     },
     slug: "software-engineering",
@@ -45,5 +45,16 @@ export const services: Service[] = [
       alt: "product",
     },
     slug: "product-management",
+  },
+  {
+    language: Language.EN,
+    title: "Artificial Intelligence ",
+    content:
+      "Artificial Intelligence (AI) has rapidly transitioned from a futuristic concept to a competitive necessity. However, many organizations find themselves stuck in the experimentation phase, struggling to scale AI solutions that deliver tangible business value.",
+    image: {
+      src: "/img/services/ai.jpg",
+      alt: "ai",
+    },
+    slug: "artificial-intelligence",
   },
 ];

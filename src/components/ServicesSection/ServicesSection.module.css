@@ -1,0 +1,24 @@
+.servicesContainer {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicesTitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+}
+
+/* Responsive font scaling for larger screens */
+@media (min-width: 768px) {
+  .servicesTitle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}

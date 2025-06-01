@@ -9,13 +9,19 @@ interface CartaListProps {
   items: CartaItem[];
   annex?: ImageProps;
 }
+
 function CartaList({ items, annex }: CartaListProps) {
   return (
     <div className={styles.cartaListContainer}>
-      {items.map((cartaItem: CartaItem) => (
-        <Carta cartaItem={cartaItem} key={cartaItem.index} />
+      {items.map((cartaItem) => (
+        <Carta key={cartaItem.index} cartaItem={cartaItem} />
       ))}
-      {annex && <img src={useBaseUrl(annex.src)} alt={`${annex.src}`} />}
+      {annex && (
+        <img
+          src={useBaseUrl(annex.src)}
+          alt={annex.alt || "Annex image"}
+        />
+      )}
     </div>
   );
 }

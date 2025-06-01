@@ -1,13 +1,13 @@
-import HomeSlides from "@site/src/components/HomeSlides/HomeSlides";
-import OurMethodSection from "@site/src/components/OurMethodSection/OurMethodSection";
-import Layout from "@theme/Layout";
-import styles from "./index.module.css";
-import FeaturesClients from "@site/src/components/FeaturedClients/FeaturedClients";
+import HomeSlides from '@site/src/components/HomeSlides/HomeSlides'
+import OurMethodSection from '@site/src/components/OurMethodSection/OurMethodSection'
+import Layout from '@theme/Layout'
+import { featuredClients } from '@site/src/data/featuredClients'
+import FeaturesCards from '@site/src/components/FeaturedCards/FeaturedCards'
 
 function HomePage() {
   return (
     <Layout>
-      <div className="container">
+      <div className='container'>
         <section>
           <HomeSlides />
         </section>
@@ -15,11 +15,14 @@ function HomePage() {
           <OurMethodSection />
         </section>
         <section>
-          <FeaturesClients />
+          <FeaturesCards
+            title='Featured client stories'
+            featured={featuredClients}
+          />
         </section>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage

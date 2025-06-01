@@ -1,7 +1,7 @@
 import { Redirect, useLocation } from "@docusaurus/router";
 import ContentLayout from "@site/src/components/ContentLayout";
 import ServiceView from "@site/src/components/ServiceVew/ServiceView";
-import { services } from "@site/src/data/services";
+import { services } from "@site/src/data/services/services";
 import Layout from "@theme/Layout";
 
 function useQuery() {
