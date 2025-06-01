@@ -20,7 +20,7 @@ function Carta({ cartaItem }: Props) {
           loading='lazy'
         />
       ) : (
-        <>
+        <div className={styles.cartaInner}>
           <img
             className={styles.cartaImage}
             src={useBaseUrl(cartaItem.image.src)}
@@ -45,7 +45,7 @@ function Carta({ cartaItem }: Props) {
               Read more <RightArrow className={styles.readMoreArrow} />
             </a>
           </div>
-        </>
+        </div>
       )}
     </div>
   )
