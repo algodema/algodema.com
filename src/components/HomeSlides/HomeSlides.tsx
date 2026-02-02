@@ -19,18 +19,39 @@ function HomeSlides() {
   return (
     <div className={clsx(`slider-container ${styles.sliderContainer}`)}>
       <Slider {...settings}>
-        {slides.map((slide) => (
-          <div className={clsx(`shadow--lw ${styles.slide}`)}>
-            <h1 className={styles.title}>{slide.title}</h1>
-            <h4 className={styles.description}>{slide.description}</h4>
-            <a
-              className={clsx(
-                `button button--primary  button--lg ${styles.readMore}`
-              )}
-              href={useBaseUrl(slide.readMoreLink)}
-            >
-              {slide.readMoreLabel}
-            </a>
+        {slides.map((slide, idx) => (
+          <div key={idx} className={clsx(`shadow--lw ${styles.slide}`)}>
+            <div className={styles.content}>
+              <h1 className={styles.title}>
+                <span className={styles.titleText}>{slide.title}</span>
+                <a
+                  className={styles.titleMore}
+                  href={useBaseUrl(slide.readMoreLink)}
+                  aria-label={`Read more about ${slide.title}`}
+                >
+                  …
+                </a>
+              </h1>
+              <h4 className={styles.description}>{slide.description}</h4>
+              <a
+                className={clsx(
+                  `button button--primary ${styles.readMore}`
+                )}
+                href={useBaseUrl(slide.readMoreLink)}
+              >
+                {slide.readMoreLabel}
+              </a>
+            </div>
+            {slide.image && (
+              <div className={styles.imageWrap}>
+                <img
+                  src={useBaseUrl(slide.image.src)}
+                  alt={slide.image.alt}
+                  className={styles.slideImage}
+                  loading="lazy"
+                />
+              </div>
+            )}
           </div>
         ))}
       </Slider>

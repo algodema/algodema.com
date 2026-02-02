@@ -1,5 +1,11 @@
 .container {
     position: relative;
-    padding-bottom: 0.5rem;
-    margin: 1rem;
+    /* Fill the viewport but reserve space for navbar and footer using CSS variables with fallbacks.
+       This ensures the site footer remains visible without scrolling when page content is short. */
+    min-height: calc(100vh - var(--ifm-navbar-height, 0px) - var(--ifm-footer-height, 64px));
+    display: flex;
+    align-items: center; /* vertically center content within available area */
+    justify-content: center;
+    padding: 1.25rem;
+    margin: 0.5rem;
 }

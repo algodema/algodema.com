@@ -27,10 +27,10 @@ function Contact() {
 
     emailjs
       .send(
-        customFields.emailJsServiceId ?? "",
-        customFields.emailJsTemplateId ?? "",
+        String(customFields.emailJsServiceId ?? ""),
+        String(customFields.emailJsTemplateId ?? ""),
         templateParams,
-        customFields.emailJsUserId
+        String(customFields.emailJsUserId ?? "")
       )
       .then(
         function (_response) {

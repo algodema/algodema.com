@@ -7,8 +7,8 @@
 
 
 .cartaContainer {
-  height: 400px; /* Adjust as needed */
-  max-width: 320px;
+  /* Allow the grid to determine sizing. Let the card stretch to fill the grid row. */
+  height: 100%;
   display: flex;
   flex-direction: column;
   background: var(--ifm-background-color);
@@ -16,7 +16,7 @@
   overflow: hidden;
   box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0.75rem auto;
+  margin: 0;
 }
 
 
@@ -28,7 +28,8 @@
 
 .cartaImageOnly {
   width: 100%;
-  height: 320px;
+  /* Use an aspect-ratio so image scales nicely across layouts */
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
   border-radius: 12px;
@@ -42,7 +43,8 @@
 
 .cartaImage {
   width: 100%;
-  height: 180px;
+  /* Use aspect-ratio for consistent header image heights */
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -80,6 +82,8 @@
   line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  /* Standard property for browsers that support it */
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -90,42 +94,69 @@
 .cartaContentReadMore {
   margin-top: auto; /* Push to bottom */
   align-self: flex-start;
-  padding: 0.5rem 1rem;
-  background-color: var(--ifm-color-primary);
-  color: white;
-  font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 20px;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  gap: 0.5rem;
+  padding: 0.55rem 1.05rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: white;
+  /* Soft gradient for a modern button look */
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px; /* pill */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12), inset 0 -2px 0 rgba(255,255,255,0.03);
+  transition: transform 180ms cubic-bezier(.2,.9,.3,1), box-shadow 180ms ease, filter 180ms ease;
   text-decoration: none;
+  will-change: transform;
 }
 
 
 .cartaContentReadMore:hover,
 .cartaContentReadMore:focus {
-  background-color: var(--ifm-color-primary-dark);
-  color: white;
-  /* Keep font white on hover */
-  box-shadow: 0 5px 12px rgb(0 0 0 / 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+  filter: brightness(1.02);
   outline: none;
+}
+
+.cartaContentReadMore:focus-visible {
+  /* Accessible focus ring */
+  box-shadow: 0 0 0 4px rgba(34,139,230,0.12), 0 10px 24px rgba(0,0,0,0.18);
 }
 
 .readMoreArrow {
   width: 1rem;
   height: 1rem;
-  transition: transform 0.3s ease;
+  transition: transform 220ms cubic-bezier(.2,.9,.3,1), opacity 120ms ease;
 }
 
 .cartaContentReadMore:hover .readMoreArrow {
-  transform: translateX(4px);
+  transform: translateX(6px) rotate(2deg);
+}
+
+@media (max-width: 640px) {
+  /* Make the button easier to tap on small screens */
+  .cartaContentReadMore {
+    width: 100%;
+    justify-content: center;
+    align-self: stretch;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cartaContentReadMore,
+  .readMoreArrow {
+    transition: none !important;
+    transform: none !important;
+  }
 }
 
 @media (min-width: 640px) {
   .cartaContainer {
-    max-width: 320px;
+    /* On larger screens allow cards to expand; grid defines the width */
+    max-width: none;
   }
 }

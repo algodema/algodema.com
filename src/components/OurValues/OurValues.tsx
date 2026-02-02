@@ -22,23 +22,19 @@ function OurValues() {
         <img
           src={useBaseUrl("/img/about/values.jpg")}
           alt="values"
-          width={800}
+          width={1200}
           height={800}
         />
       </div>
       <div>
         <ValueParagraph
-          title="Why Algodema exist?"
-          content="We established algodema with the purpose of pursuing our passion daily: crafting dependable, trustworthy, and
-        enduring software and systems in collaboration with our clients and partners, all aimed at enhancing quality
-        of life. Whether it be a straightforward shopping application or a sophisticated air traffic management
-        system, our driving force remains the tangible and meaningful impact our creations have on society."
+          title="Why Algodema exists"
+          content="We build reliable, long-lasting software that makes people's lives better. From simple apps to complex systems,
+          our focus is on delivering measurable, positive impact for users and partners."
         />
 
         <div className={styles.valuesContainer}>
-          <h1 className={styles.valuesContainerTitle}>
-            We are a values-driven team
-          </h1>
+          <h1 className={styles.valuesContainerTitle}>A values-driven team</h1>
           <ValueParagraph
             title="Transparency in Communication"
             content="From the initial interaction to ongoing support, we prioritize clear and honest communication with our
@@ -54,8 +50,8 @@ function OurValues() {
 
           <ValueParagraph
             title="Long-Term Partnerships"
-            content="Focus on building long-term relationships with our customers rather than pursuing short-term gains.
-          Continuously demonstrate our commitment to their success by providing ongoing support, guidance, and proactive"
+            content="We prefer long-term partnerships: supporting our customers with ongoing guidance and reliable service rather
+          than chasing short-term wins."
           />
         </div>
       </div>

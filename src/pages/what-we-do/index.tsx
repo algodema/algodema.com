@@ -19,26 +19,28 @@ function index() {
     <Layout title="home">
       <ContentLayout>
         <div className={styles.rootContainer}>
-          <div>
-            <div>
-              <h1 className={styles.pageTitle}>
-                Empowering you to stay ahead of the curve.
-              </h1>
-              <p className={styles.pageParagraph}>
-                Embracing the forefront of technological evolution, our
-                distinguishable engineering firm excels in the realms of cloud
-                computing, software architecture, application development, and
-                artificial intelligence. With a keen eye for innovation and a
-                passion for problem-solving, we forge solutions that transcend
-                boundaries, shaping a future where possibilities are limitless
-                and excellence is the norm.
-              </p>
+          <main className={styles.hero}>
+            <h1 className={styles.pageTitle}>
+              Empowering you to stay ahead of the curve.
+            </h1>
+            <p className={styles.pageParagraph}>
+              Embracing the forefront of technological evolution, our
+              distinguishable engineering firm excels in the realms of cloud
+              computing, software architecture, application development, and
+              artificial intelligence. With a keen eye for innovation and a
+              passion for problem-solving, we forge solutions that transcend
+              boundaries, shaping a future where possibilities are limitless
+              and excellence is the norm.
+            </p>
+            <div className={styles.heroActions}>
               <a href="contact" className={styles.buttonLinkContact}>
                 How can we help you?
               </a>
             </div>
+          </main>
+          <aside className={styles.servicesSection}>
             <ServicesSection services={services} />
-          </div>
+          </aside>
         </div>
       </ContentLayout>
     </Layout>

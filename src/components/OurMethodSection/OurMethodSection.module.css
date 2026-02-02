@@ -3,7 +3,21 @@
     margin-bottom: 4px;
 }
 
-.getInTouchButton {
+.col-demo img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
-    background-color: #BD4256;
+.getInTouchButton {
+    background-color: var(--ifm-color-primary);
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .col-demo img {
+        max-height: 300px;
+    }
 }

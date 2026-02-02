@@ -4,7 +4,7 @@ import styles from './FeaturedCards.module.css'
 
 function FeaturedCard({ title, subject, content }: FeaturedCardData) {
   return (
-    <div className={clsx(`col col--4`)}>
+    <div className={clsx(styles.card)}>
       <div className='text--center'>
         {/* <Svg className={styles.featureSvg} role="img" /> */}
       </div>
@@ -13,7 +13,7 @@ function FeaturedCard({ title, subject, content }: FeaturedCardData) {
         <p>{content}</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default FeaturedCard
