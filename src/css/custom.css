@@ -43,3 +43,47 @@
   --ifm-button-primary-color: #33008b;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Footer: on small screens, reduce vertical stacking by laying out link groups horizontally
+   with a smaller gap and enabling horizontal scrolling if they don't fit. This keeps the
+   footer compact vertically while remaining accessible on narrow viewports. */
+@media (max-width: 640px) {
+  /* Target common Docusaurus footer selectors */
+  .footer .footer__links,
+  .footer__links,
+  .footer .links {
+    display: flex !important;
+    flex-direction: row;
+    /* Allow groups to wrap to multiple rows so we avoid a horizontal scroller */
+    flex-wrap: wrap;
+    gap: 0.5rem !important;
+    padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+  }
+
+  /* Ensure each group remains readable but doesn't force wrapping */
+  .footer .footer__links > *,
+  .footer__links > *,
+  .footer .links > * {
+    /* Let each group take about half the width on small screens, but allow
+       them to shrink if needed so the footer stays compact vertically. */
+    flex: 1 1 45%;
+    min-width: 120px;
+    margin: 0 !important;
+    padding-right: 0.5rem;
+  }
+
+  /* Tweak list spacing inside each group to be tighter */
+  .footer .footer__link-list,
+  .footer__link-list,
+  .footer .links .col {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Reduce top/bottom space of the footer copyright area */
+  .footer .footer__bottom,
+  .footer__bottom {
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+  }
+}

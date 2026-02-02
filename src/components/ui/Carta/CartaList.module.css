@@ -1,21 +1,26 @@
 .cartaListContainer {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr;
+  /* Use auto-fit to create responsive columns that wrap nicely. Each column will be at least 260px and grow to fill available space */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* Make grid rows use a consistent baseline so cards can stretch to fill the row when needed */
+  grid-auto-rows: 1fr;
   align-items: stretch;
 }
 
 /* Medium screens: 2 columns */
 @media (min-width: 640px) {
   .cartaListContainer {
-    grid-template-columns: repeat(2, 1fr);
+    /* Keep auto-fit behavior but ensure min width works well on larger viewports */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 
 /* Large screens: 3 columns */
 @media (min-width: 1024px) {
   .cartaListContainer {
-    grid-template-columns: repeat(5, 1fr);
+    /* Allow more columns on very large screens while preserving sensible min widths */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
@@ -26,4 +31,11 @@
   height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
+}
+
+.annexImage {
+  /* Make annex behave like a grid item and span one column by default */
+  width: 100%;
+  border-radius: 0.5rem;
+  display: block;
 }

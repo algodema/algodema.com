@@ -1,122 +1,125 @@
 .rootContainer {
-    display: grid;
+    width: 100%;
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-}
-
-@media(max-width: 768px) {
-    .rootContainer {
-        width: 100%;
-    }
+    padding: 1rem;
 }
 
 .titleContainer {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    max-width: 768px;
-
-
-
-    @media (min-width: 1024px) {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+    background: var(--ifm-background-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
 .title {
-    margin-bottom: 1rem;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 2rem;
+    line-height: 1.1;
     font-weight: 800;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
     text-align: center;
 }
 
 .subTitle {
-    margin-bottom: 2rem;
-    font-weight: 300;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
     text-align: center;
-
-    @media (min-width: 640px) {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-    }
-
-    @media (min-width: 1024px) {
-        margin-bottom: 4rem;
-    }
+    color: var(--ifm-color-gray-700);
 }
 
 .form {
-    margin-top: 2rem;
+    margin-top: 1.25rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr; /* single vertical column */
 }
 
 .formLabel {
     display: block;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.375rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    font-weight: 500;
-
-
+    font-weight: 600;
+    color: var(--ifm-color-gray-700);
 }
 
-.emailInput {
-    display: block;
-    padding: 0.625rem;
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-    border-width: 1px;
-
+/* Inputs */
+input[type="email"],
+input[type="text"],
+textarea {
     width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: var(--ifm-form-background, #fff);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    box-shadow: 0 1px 2px rgba(2,6,23,0.04);
+    transition: box-shadow 160ms ease, transform 120ms ease, border-color 120ms ease;
 }
 
-.subjectInput {
-    display: block;
-    padding: 0.75rem;
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-    border-width: 1px;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--ifm-color-primary);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.12);
+    transform: translateY(-1px);
 }
 
-.messageInput {
-    display: block;
-    padding: 0.625rem;
-    border-radius: 0.5rem;
-    border-width: 1px;
-
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    margin-top: 0.5rem;
+textarea {
+    min-height: 140px;
+    resize: vertical;
 }
+
+/* Textarea will naturally span the single column */
 
 .submitButton {
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.10);
+    cursor: pointer;
+    transition: transform 160ms cubic-bezier(.2,.9,.3,1), box-shadow 160ms ease;
+    justify-self: stretch; /* default to full width on small screens */
+}
+@media (max-width: 767px) {
+    .submitButton {
+                    width: 100%;
+                    justify-self: stretch; /* full width on mobile */
+    }
+}
 
-    display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    margin: 1rem auto 0 auto;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--ifm-button-primary-color);
-    background-color: var(--ifm-color-primary);
+    @media (min-width: 768px) {
+        .submitButton {
+            width: auto; /* auto width on wider screens */
+            justify-self: end; /* right-align on wider screens */
+        }
+    }
+.submitButton:active {
+    transform: translateY(1px) scale(0.998);
+}
 
+/* Ensure labels and form fields stack correctly inside the grid */
+.form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Small visual tweaks */
+/* removed empty ruleset */
+
+/* Accessible focus-visible */
+input[type="email"]:focus-visible,
+input[type="text"]:focus-visible,
+textarea:focus-visible,
+.submitButton:focus-visible {
+    outline: 3px solid rgba(34,139,230,0.12);
+    outline-offset: 3px;
 }

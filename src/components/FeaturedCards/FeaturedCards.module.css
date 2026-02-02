@@ -1,15 +1,27 @@
 .features {
-    display: flex;
-    align-items: center;
     padding: 2rem 0;
     width: 100%;
 }
 
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    align-items: start;
+}
+
 .featureSvg {
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
 }
 
 .client {
     color: var(--ifm-color-primary-dark);
+}
+
+.card {
+    background: var(--ifm-background-color);
+    border-radius: 10px;
+    padding: 1rem 0.75rem;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.04);
 }

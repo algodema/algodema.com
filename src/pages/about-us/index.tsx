@@ -3,7 +3,7 @@ import OurValues from "@site/src/components/OurValues/OurValues";
 import Layout from "@theme/Layout";
 import React from "react";
 
-function LegalNotice() {
+function AboutUs() {
   return (
     <Layout>
       <ContentLayout>
@@ -13,4 +13,4 @@ function LegalNotice() {
   );
 }
 
-export default LegalNotice;
+export default AboutUs;

@@ -12,7 +12,7 @@ function FeaturesCards({ title, featured }: FeaturesCardsProps) {
     <section className={styles.features}>
       <div className='container'>
         <h1>{title}</h1>
-        <div className='row'>
+        <div className={styles.cardsGrid}>
           {featured.map((props, idx) => (
             <FeaturedCard key={idx} {...props} />
           ))}

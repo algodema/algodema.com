@@ -20,6 +20,7 @@ function CartaList({ items, annex }: CartaListProps) {
         <img
           src={useBaseUrl(annex.src)}
           alt={annex.alt || "Annex image"}
+          className={styles.annexImage}
         />
       )}
     </div>
