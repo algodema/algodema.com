@@ -9,7 +9,7 @@ function OurMethodSection() {
       <div className="col col--6">
         <div className="col-demo">
           <img
-            src={useBaseUrl("/img/home/business-people-are-brainstorming.jpg")}
+            src={useBaseUrl("/img/home/gen-e2.png")}
             alt="4keys"
             width={538}
             height={428}
@@ -18,41 +18,41 @@ function OurMethodSection() {
       </div>
       <div className="col col--6">
         <div className="col-demo">
-          <h1>Framing, Design, Plan, Engineering</h1>
-          <p>
-            In the realm of software engineering, framing sets the groundwork by
-            delineating the scope, objectives, and constraints of a project. It
-            involves understanding the problem domain and identifying key
-            requirements before proceeding to design.
-          </p>
-          <p>
-            Design in software engineering encompasses the architecture, user
-            interface, and overall structure of the system. It involves creating
-            blueprints that outline how different components will interact and
-            function together to fulfill the project goals efficiently and
-            effectively.
-          </p>
-          <p>
-            Plans in software engineering provide a roadmap for development,
-            outlining timelines, tasks, and resources needed to bring the design
-            to fruition. This involves breaking down the project into manageable
-            phases and setting milestones to track progress.
-          </p>
-          <p>
-            Engineering in software development involves the implementation of
-            the design, utilizing coding languages, algorithms, and best
-            practices to build robust, scalable, and maintainable software
-            systems. It also involves rigorous testing, debugging, and
-            optimization to ensure that the final product meets quality
-            standards and user expectations. Together, framing, design, plan,
-            and engineering form the backbone of software development, enabling
-            the creation of innovative and reliable software solutions.
-          </p>
+
+            <h1>Transform Your Software Delivery with Gen‑e2 – Generative AI Enhanced Engineering</h1>
+
+            <section>
+              <p>At <strong>Algodema</strong>, we bring the future of software development to your organization with <strong>Gen‑e2</strong>, an AI-driven engineering methodology designed to accelerate product delivery while ensuring exceptional quality. Gen‑e2 leverages <strong>generative AI</strong> to handle up to <strong>95% of code, documentation, architecture, and infrastructure</strong>, allowing your teams to focus on <strong>strategic decision-making, product vision, and quality oversight</strong>.</p>
+            </section>
+            <section>
+              <p>Our approach transforms the traditional software development lifecycle into a <strong>context-driven, AI-first process</strong>, where humans define requirements, constraints, and objectives, and AI executes the implementation consistently and efficiently. Early adopters have achieved <strong>2–5× faster delivery</strong>, reduced bottlenecks, and improved developer satisfaction.</p>
+            </section>
+            <section>
+              <h2>Why Choose Algodema for Gen‑e2?</h2>
+              <ul>
+                <li><strong>Accelerated Delivery:</strong> Significantly reduce time-to-market with AI-powered execution.</li>
+                <li><strong>High-Quality Results:</strong> AI-generated deliverables ensure consistency and minimize errors.</li>
+                <li><strong>Strategic Focus:</strong> Engineers and product teams operate at higher-value levels.</li>
+                <li><strong>Seamless Integration:</strong> Fully compatible with Agile, DevOps, and modern software practices.</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Our Services Include</h2>
+              <ul>
+                <li>End-to-end <strong>Gen‑e2 adoption</strong> and consulting</li>
+                <li><strong>Process design and AI integration</strong> tailored to your organization</li>
+                <li><strong>Training and upskilling</strong> teams for AI-assisted product development</li>
+                <li><strong>Ongoing support and optimization</strong> to maximize productivity and ROI</li>
+              </ul>
+            </section>
+            <section>
+              <p>With <strong>Algodema</strong>, harness the power of generative AI to <strong>innovate faster, reduce costs, and maintain a competitive edge</strong>. Let us help you transform your software delivery with the next-generation of AI-enhanced engineering.</p>
+            </section>
           <a
             href="contact"
             className={clsx(`button  button--lg ${styles.getInTouchButton}`)}
           >
-            How can we help you?
+            Start Building Today
           </a>
         </div>
       </div>
